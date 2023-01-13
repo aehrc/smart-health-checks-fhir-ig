@@ -405,6 +405,13 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/mbs715-v"
+        },
+        "exampleBoolean": false,
+        "name": "Aboriginal and Torres Strait Islander health check – Adults (25–49 years)"
+      },
+      {
+        "reference": {
           "reference": "ValueSet/australian-states-territories-2"
         },
         "description": "The Australian States and Territories value set includes values that represent the Australian states and territories.",

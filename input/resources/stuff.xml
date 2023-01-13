@@ -1,0 +1,2232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+    <id value="mbs715-v"/>
+    <meta >
+        <versionId value="1"/>
+        <lastUpdated value="2022-12-23T04:18:28.281559+00:00"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext" >
+        <extension url="name" >
+            <valueId value="LaunchPatient"/>
+        </extension>
+        <extension url="type" >
+            <valueCode value="Patient"/>
+        </extension>
+        <extension url="description" >
+            <valueString value="The patient that is to be used to pre-populate the form"/>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery0"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="FamilyMemberHistory?patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery1"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=72166-2&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery2"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=8302-2&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery3"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=8280-0&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery4"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=29463-7&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery5"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=8867-4&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery6"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=39156-5&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery7"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=85354-9&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery21"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Condition?patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery23"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=14647-2&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+        <valueExpression >
+            <name value="PrePopQuery24"/>
+            <language value="application/x-fhir-query"/>
+            <expression value="Observation?code=14646-4&#38;_count=1&#38;_sort=-date&#38;patient={{%LaunchPatient.id}}"/>
+        </valueExpression>
+    </extension>
+    <url value="http://www.health.gov.au/assessments/mbs/715"/>
+    <version value="0.4"/>
+    <name value="MBS715"/>
+    <title value="Aboriginal and Torres Strait Islander health check – Adults (25–49 years)"/>
+    <status value="draft"/>
+    <subjectType value="Patient"/>
+    <date value="2020-02-25T07:14:23.125Z"/>
+    <publisher value="aehrc"/>
+    <description value="Professional attendance by a general practitioner at consulting rooms or in another place other than a hospital or residential aged care facility, for a health assessment of a patient who is of Aboriginal or Torres Strait Islander descent-not more than once in a 9 month period"/>
+    <item >
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="weight"/>
+                <language value="text/fhirpath"/>
+                <expression value="item.where(linkId='ac1559c8-f03a-43a6-818f-9b31892ec2a7').item.where(linkId='f5308669-d1f9-49a1-bedd-7420946e7288').answer.value"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="height"/>
+                <language value="text/fhirpath"/>
+                <expression value="item.where(linkId='ac1559c8-f03a-43a6-818f-9b31892ec2a7').item.where(linkId='29644716-433e-45ec-a805-8043f35a85e1').answer.value"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="female"/>
+                <language value="text/fhirpath"/>
+                <expression value="iif(item.where(linkId='0db82ad3-fd45-4c0c-a603-9fbe6bbb9aca').item.where(linkId='3a98ac7a-9313-4222-a853-edd0415bfc48').answer.value.code='female', 1, 0)"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="age"/>
+                <language value="text/fhirpath"/>
+                <expression value="item.where(linkId='age').answer.value"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cvdAge"/>
+                <language value="text/fhirpath"/>
+                <expression value="iif(%age &gt; 74, 74, iif(%age &lt; 35, 35, %age))"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="systolicBP"/>
+                <language value="text/fhirpath"/>
+                <expression value="item.where(linkId='7845504e-859d-4834-a264-127bcbee8759').item.where(linkId='systolic-bp').answer.value"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="smoker"/>
+                <language value="text/fhirpath"/>
+                <expression value="iif(item.where(linkId='14a9fb5f-5b0e-4862-b143-08a11cd3ebf0').item.where(linkId='b639a3a8-f476-4cc8-b5c7-f5d2abb23511').answer.value.code='77176002', 1, 0)"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="totalCh"/>
+                <language value="text/fhirpath"/>
+                <expression value="item.where(linkId='7845504e-859d-4834-a264-127bcbee8759').item.where(linkId='tot-chol').answer.value"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="hdl"/>
+                <language value="text/fhirpath"/>
+                <expression value="item.where(linkId='7845504e-859d-4834-a264-127bcbee8759').item.where(linkId='hdl-chol').answer.value"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="diabetes"/>
+                <language value="text/fhirpath"/>
+                <expression value="iif(item.where(linkId='7845504e-859d-4834-a264-127bcbee8759').item.where(linkId='has-diabetes').answer.value = true,1,0)"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="ecgLvh"/>
+                <language value="text/fhirpath"/>
+                <expression value="iif(item.where(linkId='7845504e-859d-4834-a264-127bcbee8759').item.where(linkId='ecg-lvh').answer.value = true,1,0)"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cBase"/>
+                <language value="text/fhirpath"/>
+                <expression value="18.8144"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cFemale"/>
+                <language value="text/fhirpath"/>
+                <expression value="%female * -1.2146"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cAge"/>
+                <language value="text/fhirpath"/>
+                <expression value="%cvdAge.ln() * -1.8443"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cAgeFemale"/>
+                <language value="text/fhirpath"/>
+                <expression value="%female * %cvdAge.ln() * 0.3668"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cSBP"/>
+                <language value="text/fhirpath"/>
+                <expression value="%systolicBP.ln() * -1.4032"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cSmoker"/>
+                <language value="text/fhirpath"/>
+                <expression value="%smoker * -0.3899"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cTcHdl"/>
+                <language value="text/fhirpath"/>
+                <expression value="(%totalCh / %hdl).ln() * -0.539"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cDiabetes"/>
+                <language value="text/fhirpath"/>
+                <expression value="%diabetes * -0.3036"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cDiabetesFemale"/>
+                <language value="text/fhirpath"/>
+                <expression value="%female * %diabetes * -0.1697"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cEcgLvh"/>
+                <language value="text/fhirpath"/>
+                <expression value="%ecgLvh * -0.3362"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="sumOfCoeffs"/>
+                <language value="text/fhirpath"/>
+                <expression value="%cBase + %cFemale + %cAge + %cAgeFemale + %cSBP + %cSmoker + %cTcHdl + %cDiabetes + %cDiabetesFemale + %cEcgLvh"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cvdScale"/>
+                <language value="text/fhirpath"/>
+                <expression value="(0.6536 + (%sumOfCoeffs * -0.2402)).exp()"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cvdU"/>
+                <language value="text/fhirpath"/>
+                <expression value="(5.ln()-%sumOfCoeffs)/%cvdScale"/>
+            </valueExpression>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/variable" >
+            <valueExpression >
+                <name value="cvdScore"/>
+                <language value="text/fhirpath"/>
+                <expression value="(1 - (%cvdU.exp()*-1).exp()) * 100"/>
+            </valueExpression>
+        </extension>
+        <linkId value="715"/>
+        <text value="MBS 715"/>
+        <type value="group"/>
+        <item >
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                <valueExpression >
+                    <language value="text/fhirpath"/>
+                    <expression value="today().toString().substring(0,4).toInteger() - %LaunchPatient.birthDate.toString().substring(0,4).toInteger()"/>
+                </valueExpression>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" >
+                <valueBoolean value="true"/>
+            </extension>
+            <linkId value="age"/>
+            <text value="Age of Patient"/>
+            <type value="integer"/>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="5b78369f-9007-44d0-b3fd-4d95851b17b5"/>
+            <text value="About the health check"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="Not claimed 715 or 228 in past nine months"/>
+                </extension>
+                <linkId value="661dd4c2-3092-4eb0-92d6-a8b18865c4b4"/>
+                <text value="Eligible for health check"/>
+                <type value="choice"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="Y"/>
+                        <display value="Yes"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="N"/>
+                        <display value="No"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <code value="NA"/>
+                        <display value="NA"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+            <item >
+                <linkId value="48d34fc9-f10e-4ddd-9aba-8948ce5bffb5"/>
+                <text value="Date of last health check"/>
+                <type value="date"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="2edd4de8-8bc6-43b1-85ae-9bcd92565e60"/>
+            <text value="Consent"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="b7a9e23c-b875-4536-b72d-81d361c18e2c"/>
+                <text value="Consent given after discussion of process and benefits of a health check"/>
+                <type value="choice"/>
+                <enableWhen >
+                    <question value="age"/>
+                    <operator value=">"/>
+                    <answerInteger value="12"/>
+                </enableWhen>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="Y"/>
+                        <display value="Yes"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="N"/>
+                        <display value="No"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <code value="NA"/>
+                        <display value="NA"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+            <item >
+                <linkId value="88cafba2-41a7-4097-8181-d22328b1a2d5"/>
+                <text value="Consent given by parent/primary carer after discussion of benefits and process of a health check"/>
+                <type value="boolean"/>
+                <enableWhen >
+                    <question value="age"/>
+                    <operator value="&lt;="/>
+                    <answerInteger value="12"/>
+                </enableWhen>
+            </item>
+            <item >
+                <linkId value="8272b807-6751-489f-8f5c-f380e37edd30"/>
+                <text value="Consent given for sharing of information with relevant healthcare providers"/>
+                <type value="choice"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="Y"/>
+                        <display value="Yes"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="N"/>
+                        <display value="No"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <code value="NA"/>
+                        <display value="NA"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+            <item >
+                <linkId value="8272b807-6751-489f-8f5c-f380e37edd31"/>
+                <text value="Who/details"/>
+                <type value="string"/>
+                <enableWhen >
+                    <question value="8272b807-6751-489f-8f5c-f380e37edd30"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="Y"/>
+                    </answerCoding>
+                </enableWhen>
+            </item>
+            <item >
+                <linkId value="650e63e1-3b06-46e6-b2c9-41f67717cacd"/>
+                <text value="Carer present"/>
+                <type value="group"/>
+                <enableWhen >
+                    <question value="age"/>
+                    <operator value="&lt;"/>
+                    <answerInteger value="24"/>
+                </enableWhen>
+                <item >
+                    <linkId value="ee2589d5-e1b0-400d-a2ae-48356e2d011d"/>
+                    <text value="Parent/primary carer present for health check"/>
+                    <type value="choice"/>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="Y"/>
+                            <display value="Yes"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="N"/>
+                            <display value="No"/>
+                        </valueCoding>
+                    </answerOption>
+                </item>
+                <item >
+                    <linkId value="f9aaa187-ef4d-4aff-a805-9ad2ebe56fe5"/>
+                    <text value="Relationship to child"/>
+                    <type value="choice"/>
+                    <enableWhen >
+                        <question value="ee2589d5-e1b0-400d-a2ae-48356e2d011d"/>
+                        <operator value="="/>
+                        <answerCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="Y"/>
+                        </answerCoding>
+                    </enableWhen>
+                    <answerValueSet value="https://r4.ontoserver.csiro.au/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=refset/32570591000036107&#38;"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="6dcb36ba-8ce1-471a-bd5a-98c63791b4f3"/>
+                <text value="Date"/>
+                <type value="date"/>
+                <required value="true"/>
+            </item>
+            <item >
+                <linkId value="e51a2862-72a0-4640-b516-712b574210f1"/>
+                <text value="Doctor"/>
+                <type value="string"/>
+            </item>
+            <item >
+                <linkId value="85deb7bc-ead9-4574-99d0-c26a3cce3289"/>
+                <text value="Nurse"/>
+                <type value="string"/>
+            </item>
+            <item >
+                <linkId value="7401cc0b-51a9-412d-a41a-ceddcdffd505"/>
+                <text value="Aboriginal health worker/practitioner"/>
+                <type value="string"/>
+            </item>
+            <item >
+                <extension url="http://standards.healthconnex.com.au/fhir/StructureDefinition/Questionnaire-hcx-horizontal" >
+                    <valueBoolean value="true"/>
+                </extension>
+                <linkId value="7944e2ee-b3d7-4acc-a0c6-022c43e680b3"/>
+                <text value="Location of health check"/>
+                <type value="choice"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="257585005"/>
+                        <display value="Clinic"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="264362003"/>
+                        <display value="Home"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="74964007"/>
+                        <display value="Other"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="0db82ad3-fd45-4c0c-a603-9fbe6bbb9aca"/>
+            <text value="Patient Details"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%LaunchPatient.name.where(use='usual').select(given.first() + ' ' + family)"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="2f028ea2-1d0b-4ddb-b1aa-f44c46586e94"/>
+                <text value="Name"/>
+                <type value="string"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%LaunchPatient.birthDate"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="3a98ac7a-9313-4222-a853-edd0415bfc49"/>
+                <text value="Date of birth"/>
+                <type value="date"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="today().toString().substring(0,4).toInteger() - %LaunchPatient.birthDate.toString().substring(0,4).toInteger()"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="cbd45ca3-4d0e-4dd1-a0e7-f9642701d05f"/>
+                <text value="Age"/>
+                <type value="integer"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%LaunchPatient.gender"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="3a98ac7a-9313-4222-a853-edd0415bfc48"/>
+                <text value="Gender"/>
+                <type value="choice"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://hl7.org/fhir/administrative-gender"/>
+                        <code value="male"/>
+                        <display value="Male"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://hl7.org/fhir/administrative-gender"/>
+                        <code value="female"/>
+                        <display value="Female"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%LaunchPatient.extension('http://hl7.org.au/fhir/StructureDefinition/indigenous-status').value"/>
+                    </valueExpression>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                    <valueCodeableConcept >
+                        <coding >
+                            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                            <code value="check-box"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" >
+                    <valueCode value="vertical"/>
+                </extension>
+                <linkId value="3d46c42b-a10f-4805-ad9f-ae9510bdbc4e"/>
+                <code >
+                    <code value="291036"/>
+                    <display value="Indigenous status"/>
+                </code>
+                <text value="Aboriginal and Torres Strait Islander status"/>
+                <type value="choice"/>
+                <repeats value="false"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                        <code value="1"/>
+                        <display value="Aboriginal but not Torres Strait Islander origin"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                        <code value="2"/>
+                        <display value="Torres Strait Islander but not Aboriginal origin"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                        <code value="3"/>
+                        <display value="Both Aboriginal and Torres Strait Islander origin"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                        <code value="4"/>
+                        <display value="Neither Aboriginal nor Torres Strait Islander origin"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                        <code value="9"/>
+                        <display value="Not stated/inadequately described"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                    <valueCodeableConcept >
+                        <coding >
+                            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                            <code value="autocomplete"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <linkId value="3d46c42b-a10f-4805-ad9f-ae9510bdbc4f"/>
+                <text value="Language Group"/>
+                <type value="choice"/>
+                <repeats value="true"/>
+                <answerValueSet value="https://r4.ontoserver.csiro.au/fhir/ValueSet/$expand?url=http://csiro.au/valueset/1267/au-indigenous&#38;"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%LaunchPatient.address.select(line.first() + ', ' + city + ', ' + state + ' ' + postalCode)"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="d752f0ee-82f2-4576-a80e-172e2daac4a6"/>
+                <text value="Address"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%LaunchPatient.telecom.where(use='home' and system='phone').value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="3b1511f4-61c3-4536-883c-04f0034e45da"/>
+                <text value="Home phone"/>
+                <type value="string"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%LaunchPatient.telecom.where(use='mobile' and system='phone').value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="39af9f0f-e3d5-46d1-aa73-349a07e24f69"/>
+                <text value="Mobile phone"/>
+                <type value="string"/>
+            </item>
+            <item >
+                <linkId value="51dddacd-49c1-4fa9-b44f-3d3e42b1c4b2"/>
+                <text value="Emergency"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="76995cf7-e08d-4ed8-94a9-9ac1d368a875"/>
+                    <text value="Emergency contact"/>
+                    <type value="string"/>
+                </item>
+                <item >
+                    <extension url="http://standards.healthconnex.com.au/fhir/StructureDefinition/Questionnaire-hcx-autocomplete" >
+                        <valueBoolean value="true"/>
+                    </extension>
+                    <linkId value="747f2cde-47b3-4042-a028-5f39d1e98671"/>
+                    <text value="Relationship to patient"/>
+                    <type value="open-choice"/>
+                    <repeats value="false"/>
+                    <answerValueSet value="https://r4.ontoserver.csiro.au/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=refset/32570591000036107&#38;"/>
+                </item>
+                <item >
+                    <linkId value="006af4cd-744c-4764-96bb-477d8a590c85"/>
+                    <text value="Contact phone"/>
+                    <type value="string"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="a763a5d7-26b3-417a-bb50-4d7f159ea924"/>
+                <text value="Medicare"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                        <valueExpression >
+                            <language value="text/fhirpath"/>
+                            <expression value="%LaunchPatient.identifier.where(type.coding.code='MC').value.substring(0,10)"/>
+                        </valueExpression>
+                    </extension>
+                    <linkId value="fdf213a6-be81-4945-986e-6d6c3abed757"/>
+                    <text value="Medicare number"/>
+                    <type value="string"/>
+                </item>
+                <item >
+                    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                        <valueExpression >
+                            <language value="text/fhirpath"/>
+                            <expression value="%LaunchPatient.identifier.where(type.coding.code='MC').value.substring(10)"/>
+                        </valueExpression>
+                    </extension>
+                    <linkId value="dd44f505-ea46-4d08-925b-014bd9804a87"/>
+                    <text value="Reference number"/>
+                    <type value="string"/>
+                </item>
+                <item >
+                    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                        <valueExpression >
+                            <language value="text/fhirpath"/>
+                            <expression value="%LaunchPatient.identifier.where(type.coding.code='MC').period.end.toString()"/>
+                        </valueExpression>
+                    </extension>
+                    <linkId value="c2adb726-2627-42f5-ae7d-202f5a8d94fc"/>
+                    <text value="Expiry"/>
+                    <type value="string"/>
+                </item>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%LaunchPatient.identifier.where(type.coding.code='HC' or type.coding.code='PEN').value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="33313ddc-c726-4982-8a64-2171d4c68cd3"/>
+                <text value="Pension/Health Care Card number"/>
+                <type value="string"/>
+            </item>
+            <item >
+                <linkId value="463b60d2-5ce6-4cd8-89df-9ee4d99551f4"/>
+                <text value="Registered for Closing the Gap PBS Co-payment measure (CTG)"/>
+                <type value="choice"/>
+                <repeats value="false"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="Y"/>
+                        <display value="Yes"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="N"/>
+                        <display value="No"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <code value="NA"/>
+                        <display value="NA"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+            <item >
+                <linkId value="218fba3b-2fa1-404e-9583-0b1b38a7354a"/>
+                <text value="NDIS"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="163c34a2-4c95-4afe-8af1-16bb68856635"/>
+                    <text value="Registered for National Disability Insurance Scheme"/>
+                    <type value="choice"/>
+                    <repeats value="false"/>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="Y"/>
+                            <display value="Yes"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="N"/>
+                            <display value="No"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                            <code value="NA"/>
+                            <display value="NA"/>
+                        </valueCoding>
+                    </answerOption>
+                </item>
+                <item >
+                    <linkId value="2b6ea01d-77f3-4fbc-8663-080222f196a6"/>
+                    <text value="Yes, number"/>
+                    <type value="string"/>
+                    <enableWhen >
+                        <question value="163c34a2-4c95-4afe-8af1-16bb68856635"/>
+                        <operator value="="/>
+                        <answerCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="Y"/>
+                        </answerCoding>
+                    </enableWhen>
+                </item>
+            </item>
+            <item >
+                <linkId value="b4172a40-3a20-41f8-a90f-afa7eb174b70"/>
+                <text value="Do you have children?"/>
+                <type value="choice"/>
+                <repeats value="false"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="Y"/>
+                        <display value="Yes"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="N"/>
+                        <display value="No"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                        <code value="NA"/>
+                        <display value="NA"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+            <item >
+                <linkId value="3fbc6d2d-f217-4521-91a1-4da336dc1394"/>
+                <text value="Number of children"/>
+                <type value="integer"/>
+                <enableWhen >
+                    <question value="b4172a40-3a20-41f8-a90f-afa7eb174b70"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="Y"/>
+                    </answerCoding>
+                </enableWhen>
+            </item>
+            <item >
+                <linkId value="f9f5314b-f9a5-4a09-8b4b-b1ab42144f44"/>
+                <text value="Number of children in your care"/>
+                <type value="integer"/>
+                <enableWhen >
+                    <question value="b4172a40-3a20-41f8-a90f-afa7eb174b70"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                        <code value="Y"/>
+                    </answerCoding>
+                </enableWhen>
+            </item>
+            <item >
+                <linkId value="b59c5fb3-b9b0-4bfb-b931-84e21fb9ae31"/>
+                <text value="Carer"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="3d6ff846-040e-46cc-9121-109321420985"/>
+                    <text value="Are you responsible for caring for someone else?"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="36b62a30-abad-4c63-aedf-6a20c0067b07"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="664c9680-5c7e-407f-b853-2fd2ed65509d"/>
+                <text value="Providers"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="1a3e5e7f-aac6-4828-95c3-c4da24ae1351"/>
+                    <text value="Are Name and contact details of other key providers (eg case workers, support services) up to date?"/>
+                    <type value="choice"/>
+                    <repeats value="false"/>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="Y"/>
+                            <display value="Yes"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="N"/>
+                            <display value="No"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                            <code value="NA"/>
+                            <display value="NA"/>
+                        </valueCoding>
+                    </answerOption>
+                </item>
+                <item >
+                    <linkId value="c4bca7d0-e3b3-4296-b231-668c02ecdaad"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="409588fa-f8d7-494e-b3fb-e99fb4154cf4"/>
+            <text value="Current health/patient priorities"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="6dd1743c-96cb-462d-9f4a-88a4153c23f5"/>
+                <text value="What are the important things for you in this health check today?"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="dc4fa5c4-d738-482e-a0bf-a23d15941288"/>
+                <text value="Is there anything you are worried about?"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="4c2f9b1a-dabf-477d-9b2e-c694b4ae8056"/>
+                <text value="Do you have any specific health goals? Is there anything in particular about your health and wellbeing that you would like to improve?"/>
+                <type value="text"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="a5e9f87a-c561-4ffb-b200-9b93b8887d22"/>
+            <text value="Medical history and current problems"/>
+            <type value="group"/>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery21.entry.resource.code.select((coding.where(system='http://snomed.info/sct') | coding.where(system!='http://snomed.info/sct').first() | text ).first())"/>
+                    </valueExpression>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                    <valueCodeableConcept >
+                        <coding >
+                            <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                            <code value="autocomplete"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <linkId value="a5e9f87a-c561-4ffb-b200-9b93b8887a11"/>
+                <code >
+                    <code value="282291009"/>
+                    <display value="Diagnosis interpretation"/>
+                </code>
+                <text value="item"/>
+                <type value="open-choice"/>
+                <repeats value="true"/>
+                <answerValueSet value="https://r4.ontoserver.csiro.au/fhir/ValueSet/$expand?url=http://snomed.info/sct?fhir_vs=ecl/(%5E%2032570071000036102%20OR%20%5E%2032570141000036105)&#38;"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-shortText" >
+                <valueString value="Regular medications"/>
+            </extension>
+            <linkId value="d8475eb8-662b-4081-9ded-4ab2654ffe90"/>
+            <text value="Regular medications: check if still required, appropriate dose, understanding of medication and adherence"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="853430bc-3a69-4c67-a632-a46b33a728fd"/>
+                <text value="Do you take any regular medications (prescribed, over-the-counter, traditional, complementary and alternative)?"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <extension url="http://standards.healthconnex.com.au/fhir/StructureDefinition/Questionnaire-hcx-horizontal" >
+                        <valueBoolean value="true"/>
+                    </extension>
+                    <linkId value="6daa9aee-6102-42f5-96c8-b1ce594b4d0c"/>
+                    <text value="None"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <extension url="http://standards.healthconnex.com.au/fhir/StructureDefinition/Questionnaire-hcx-horizontal" >
+                        <valueBoolean value="true"/>
+                    </extension>
+                    <linkId value="e131a633-b008-4011-ad2f-ce5c7adb2913"/>
+                    <text value="Yes, up to date in health record"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <extension url="http://standards.healthconnex.com.au/fhir/StructureDefinition/Questionnaire-hcx-horizontal" >
+                        <valueBoolean value="true"/>
+                    </extension>
+                    <linkId value="51ffa4b6-9bdc-4b57-991a-4abc5e642fb0"/>
+                    <text value="Understanding and adherence checked"/>
+                    <type value="boolean"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="d533a899-478b-4d66-9d11-ad4a0732fb4d"/>
+            <text value="Allergies/adverse reactions"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="93dd0277-af02-43c4-aef1-3f4a809d7085"/>
+                <text value="Up to date in health record"/>
+                <type value="boolean"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-shortText" >
+                <valueString value="Relevant family history"/>
+            </extension>
+            <linkId value="f6a708b2-043f-4cdb-9213-1894f6fce911"/>
+            <text value="Relevant family history (including diabetes, heart disease, cancer, mental health)"/>
+            <type value="group"/>
+            <repeats value="true"/>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery0.entry.resource.select(relationship.coding.display + ' - ' + condition.code.coding.display).join(' ')"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="cfdc0b14-7271-4145-b57a-9c1faffd6516"/>
+                <text value="Details"/>
+                <type value="text"/>
+                <repeats value="false"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="e599e338-62ad-4b5e-8538-18531bbc3853"/>
+            <text value="Social and emotional wellbeing"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="2a20e056-c27a-4f1a-9bed-17c9a4152d8e"/>
+                <text value="General"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="9e388cd4-124e-432c-9439-dc984777090c"/>
+                    <text value="Consider conversation about social connection, which could include questions about sports/hobbies/clubs/other activities"/>
+                    <type value="text"/>
+                </item>
+                <item >
+                    <linkId value="8054b320-8180-4422-b5d3-df326be9a7cf"/>
+                    <text value="Stressful events"/>
+                    <type value="group"/>
+                    <repeats value="false"/>
+                    <item >
+                        <linkId value="569862ec-e654-4afd-820f-1cf0c9273753"/>
+                        <text value="Have there been any particular stressful life events that are impacting on you/your health lately?"/>
+                        <type value="boolean"/>
+                    </item>
+                    <item >
+                        <linkId value="73cac7c5-e9f3-413a-9c82-c36d7218c0a6"/>
+                        <text value="Details"/>
+                        <type value="text"/>
+                    </item>
+                </item>
+            </item>
+            <item >
+                <linkId value="54dc96d9-42a5-4cc3-b218-0dd7e2c0f505"/>
+                <text value="Home and family"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="35f4104e-e730-4cb0-ad5e-cad67668601a"/>
+                    <text value="Who do you live with?"/>
+                    <type value="text"/>
+                </item>
+                <item >
+                    <linkId value="22f4584b-4bd6-435e-a342-3f0bf3ee710a"/>
+                    <text value="Stable housing"/>
+                    <type value="group"/>
+                    <repeats value="false"/>
+                    <item >
+                        <linkId value="65146932-104b-4b3d-82e6-1381e9f672f5"/>
+                        <text value="Do you have stable housing?"/>
+                        <type value="boolean"/>
+                    </item>
+                    <item >
+                        <linkId value="23fcddcf-b40c-41ca-a998-e0ca15116bfe"/>
+                        <text value="Details"/>
+                        <type value="text"/>
+                    </item>
+                </item>
+                <item >
+                    <linkId value="1815bc9b-59d0-47f3-9d83-c0a7c7e83ed6"/>
+                    <text value="Safety at home"/>
+                    <type value="group"/>
+                    <repeats value="false"/>
+                    <item >
+                        <linkId value="dd6d2e56-4ea5-4556-b2e1-8397f1e53b1d"/>
+                        <text value="Do you feel safe at home?"/>
+                        <type value="boolean"/>
+                    </item>
+                    <item >
+                        <linkId value="addae06e-b0f0-45b7-a274-0a34a488e2d3"/>
+                        <text value="Details"/>
+                        <type value="text"/>
+                    </item>
+                </item>
+            </item>
+            <item >
+                <linkId value="0663d124-c820-42ab-b571-c6b42efba895"/>
+                <text value="Learning and work"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="eecca7de-6d22-47b4-b867-56f75adc493a"/>
+                    <text value="Are you working/studying?"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="2cc068a6-9fc7-461e-b610-26b7776887db"/>
+                    <text value="Are you working?"/>
+                    <type value="choice"/>
+                    <repeats value="false"/>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="N"/>
+                            <display value="No"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+                            <code value="Y"/>
+                            <display value="Yes"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+                            <code value="asked-unknown"/>
+                            <display value="Don't know"/>
+                        </valueCoding>
+                    </answerOption>
+                </item>
+                <item >
+                    <linkId value="1de1d66f-baa1-411b-b957-f59cd91799dd"/>
+                    <text value="Details (occupation including occupational hazards, study, training, disability, etc)"/>
+                    <type value="text"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="5d2a8e0b-868c-47de-abad-95b765070654"/>
+                <text value="Mood"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                        <valueString value="If indicated, ask about depression (consider screening tools, eg aPHQ-9, K5 or K10)"/>
+                    </extension>
+                    <linkId value="fd9a2a80-bc77-492f-8161-393067979f77"/>
+                    <text value="How have you been feeling lately?"/>
+                    <type value="text"/>
+                </item>
+                <item >
+                    <linkId value="e685d21f-bfcf-4663-b56e-33659108ea27"/>
+                    <text value="Explore other mental health concerns as indicated"/>
+                    <type value="text"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="8d9cb000-1b59-4773-80fe-e40c3b4ea564"/>
+            <text value="Healthy Eating"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="ec13d5b1-93cc-4b58-9b3e-9e9ac0981648"/>
+                <text value="Do you have any worries about your diet or weight?"/>
+                <type value="boolean"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="Document conversation about health eating which could include: - current diet including food and drinks - recommendations about fruit and vegetable intake, water as the main drink, avoiding sugary drinks, avoiding highly processed foods (including supermarket-bought and take-away like KFC, Maccas, etc)"/>
+                </extension>
+                <linkId value="0e093226-934b-49ca-9ce2-157d46d21d81"/>
+                <text value="Details"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="983504bd-2937-4358-b914-de9a227bfc7f"/>
+                <text value="Food security"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="a88b7367-c248-42a5-8919-46cd86319438"/>
+                    <text value="Are there any issues about availability of food?"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="a428df6c-0c1d-4871-8ced-f3aadac2ba04"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="c693c53d-86ef-4f1d-ab9d-40de2bd93a13"/>
+            <text value="Physical activity, exercise and screen time"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="59606212-a4eb-4552-89c2-b2d4dea79258"/>
+                <text value="Document conversation about recommendations re physical activity, exercise and screen time"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="beeff482-30e6-4a9a-8b3f-052ffd36dd91"/>
+                <text value="Worries"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="cc548f39-fd32-4895-935d-c0f90f901e24"/>
+                    <text value="Do you have any worries about physical activity or screen time?"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="ae3dc8ad-26f5-47f0-8bdc-09909f16eb12"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="14a9fb5f-5b0e-4862-b143-08a11cd3ebf0"/>
+            <text value="Substance use including tobacco"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery1.entry.resource.valueCodeableConcept.coding"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                <text value="Smoking"/>
+                <type value="choice"/>
+                <repeats value="false"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="266919005"/>
+                        <display value="Never smoked"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="77176002"/>
+                        <display value="Smoker"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="8517006"/>
+                        <display value="Ex-Smoker"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+            <item >
+                <linkId value="9e86387d-1be4-4c26-9047-9dd6b03e1ee0"/>
+                <text value="How many?"/>
+                <type value="string"/>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="77176002"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="48031000119106"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="8517006"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="735128000"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableBehavior value="any"/>
+            </item>
+            <item >
+                <linkId value="32e71641-f660-4ca2-af99-dff8917f07be"/>
+                <text value="How long since start?"/>
+                <type value="string"/>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="77176002"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="48031000119106"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="8517006"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="735128000"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableBehavior value="any"/>
+            </item>
+            <item >
+                <linkId value="51593f4b-316e-4615-8be8-f855283d4783"/>
+                <text value="How long since quit?"/>
+                <type value="string"/>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="48031000119106"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="8517006"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableWhen >
+                    <question value="b639a3a8-f476-4cc8-b5c7-f5d2abb23511"/>
+                    <operator value="="/>
+                    <answerCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="735128000"/>
+                    </answerCoding>
+                </enableWhen>
+                <enableBehavior value="any"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="Quantity and frequency of: - alcohol - caffeine (coffee, soft drinks, iced coffee) - cannabis/yarndi/gunja other substance use: IVDU, methamphetamine, opiates, solvents, other"/>
+                </extension>
+                <linkId value="58faed64-4d47-4831-aa43-d60f19d34fa6"/>
+                <text value="Alcohol and other substance use"/>
+                <type value="text"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="b43fa906-21d1-4ac5-8fc3-354af7731d70"/>
+            <text value="Gambling"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="4805b9a1-7930-4d28-911d-9438719842cb"/>
+                <text value="Have you or someone close to you ever had issues with gambling?"/>
+                <type value="boolean"/>
+            </item>
+            <item >
+                <linkId value="786bac0d-f5d8-4bf2-9d20-39db25f7277f"/>
+                <text value="Details"/>
+                <type value="text"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="111b7d14-b9ff-433a-8ec1-0d4aba424c7b"/>
+            <text value="Genitourinary and sexual health"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="Consider discussing as relevant to age/sex/gender: - contraception - menstruation - sexually transmitted infection symptoms and screening - blood-borne virus screening - continence - menopause - erectile dysfunction"/>
+                </extension>
+                <linkId value="3616f546-4fd8-4c08-90a6-db9a5b1506f9"/>
+                <text value="Note"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="aa895b7a-6724-45c0-aad4-27adf3db481f"/>
+                <text value="Sexual health"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="464a4f5f-1750-45a7-b4da-48891a7bda8a"/>
+                    <text value="Is there anything that you are worried about in relation to your sexual health?"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="2b655dee-8079-4c4e-8280-1255d9c69bd3"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="09e6ec5d-9a00-49d7-948f-a8793765db62"/>
+                <text value="Cervical screening"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="62dff4c9-78f6-4db6-b557-6fdadc2259a9"/>
+                    <text value="Cervical screening"/>
+                    <type value="choice"/>
+                    <repeats value="false"/>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://snomed.info/sct"/>
+                            <code value="736595007"/>
+                            <display value="Cervical cancer screening refused"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://snomed.info/sct"/>
+                            <code value="410527000"/>
+                            <display value="Offered"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://snomed.info/sct"/>
+                            <code value="165330008"/>
+                            <display value="Laboratory test not necessary"/>
+                        </valueCoding>
+                    </answerOption>
+                    <answerOption >
+                        <valueCoding >
+                            <system value="http://snomed.info/sct"/>
+                            <code value="15240007"/>
+                            <display value="Current"/>
+                        </valueCoding>
+                    </answerOption>
+                </item>
+                <item >
+                    <linkId value="8484a366-b2b5-45b8-a0ec-b1f8de095f98"/>
+                    <text value="Next due"/>
+                    <type value="date"/>
+                </item>
+                <item >
+                    <linkId value="7e76c69e-279b-47d7-80e6-057f54af32fb"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-shortText" >
+                <valueString value="Immunisation"/>
+            </extension>
+            <linkId value="3a7337b7-e600-4962-b05e-c55d75f7f969"/>
+            <text value="Immunisation (eligibility for funded vaccines may vary across jurisdictions)"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="Check recommended primary vaccinations completed and provide catch-up if required"/>
+                </extension>
+                <linkId value="c7e903da-573b-4588-827e-ad7916e11720"/>
+                <text value="Note"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="ef91bc20-4a72-4364-bca6-6b4a9c7d9b53"/>
+                <text value="Immunisations up-to-date and recorded on Australian Immunisation Register (as per Australian Immunisation Handbook)?"/>
+                <type value="boolean"/>
+            </item>
+            <item >
+                <linkId value="d81cb7a2-8306-4407-a2ef-5f8441034ecc"/>
+                <text value="Immunisations due"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="a3c9259d-3999-4a04-b620-835e8e9d2f81"/>
+                <text value="Vaccines given"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="cdc53bdf-10c9-4b8d-bdc1-598c6a591db7"/>
+                    <text value="Vaccines given today recorded on Australian Immunisations Register"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="146aadbd-7f29-44fd-b5a8-a59a213d320a"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="b3fc12ed-ae45-4b0d-a21b-315d309de8dd"/>
+            <text value="Eye health"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="e535d235-3400-40f8-9d9d-428b4c5f51b1"/>
+                <text value="Worries"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="8e920a76-3e39-4036-9883-a5acff78b742"/>
+                    <text value="Is there anything that you are worried about with your vision?"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="34fb451f-540e-4ddb-bd0c-d7af15e3c6db"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="35bc7e5e-2b35-458e-b1a5-4a939d625dde"/>
+                <text value="Eye Examination"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="15dde9d9-9cd6-4bfb-a503-21103a8aafd9"/>
+                    <text value="Visual acuity (R)"/>
+                    <type value="string"/>
+                </item>
+                <item >
+                    <linkId value="c1c1d787-f1a5-479d-b7a8-8d1607f7f4a2"/>
+                    <text value="Visual acuity (L)"/>
+                    <type value="string"/>
+                </item>
+                <item >
+                    <linkId value="50144dab-2e5f-4e23-ba6b-ea3f84b839d5"/>
+                    <text value="Trachoma Check (endemic areas)"/>
+                    <type value="group"/>
+                    <repeats value="false"/>
+                    <item >
+                        <linkId value="e6f22299-7bc4-4dee-a338-77cfd7c72120"/>
+                        <text value="R"/>
+                        <type value="group"/>
+                        <repeats value="false"/>
+                        <item >
+                            <linkId value="f0cf18b6-4ce0-49b9-83ca-5490f135f87c"/>
+                            <text value="Trichiasis"/>
+                            <type value="boolean"/>
+                        </item>
+                        <item >
+                            <linkId value="0f662e8a-fd8c-4849-861d-8dba5b7cc5ae"/>
+                            <text value="Corneal scarring"/>
+                            <type value="boolean"/>
+                        </item>
+                    </item>
+                    <item >
+                        <linkId value="514c2c2d-1d86-45a3-88bd-1f9352dde321"/>
+                        <text value="L"/>
+                        <type value="group"/>
+                        <repeats value="false"/>
+                        <item >
+                            <linkId value="d76197d0-6c54-4a56-82dd-1ceada58b522"/>
+                            <text value="Trichiasis"/>
+                            <type value="boolean"/>
+                        </item>
+                        <item >
+                            <linkId value="135562a3-effa-40b4-b7ca-49b313748cd8"/>
+                            <text value="Corneal scarring"/>
+                            <type value="boolean"/>
+                        </item>
+                    </item>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="e296acdc-e378-4a78-b81d-bb7f86ff4de5"/>
+            <text value="Ear health and hearing"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="35de22f7-b44c-4d8b-bd12-8d1d5485250b"/>
+                <text value="Concerns"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="fccf2cfa-95bb-41b7-9ed3-960434edf47d"/>
+                    <text value="Is there anything that you are worried about with your hearing?"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="6b8a6d62-d0bb-41c4-b093-70464f3679dc"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+                <item >
+                    <linkId value="f7a44ef5-c0ce-4c83-a4b7-74be563bacd7"/>
+                    <text value="Last hearing test (audiology)"/>
+                    <type value="date"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="7c61f573-b981-4bdd-9161-a428e965ec4f"/>
+                <text value="Examination"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="e2bf7839-97cf-4a7a-85a0-041ddfd68926"/>
+                    <text value="Otoscopy findings: R"/>
+                    <type value="choice"/>
+                    <repeats value="true"/>
+                </item>
+                <item >
+                    <linkId value="4243acfd-ee95-4020-b000-fbb9c75e7a01"/>
+                    <text value="Otoscopy findings: L"/>
+                    <type value="choice"/>
+                    <repeats value="true"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="86103809-161e-4029-a208-4470b0bf3ac0"/>
+            <text value="Oral and dental health"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="5a1516b3-287d-414e-84df-973ec7437733"/>
+                <text value="Concerns"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="794871ad-d1cd-43f2-b5e6-8a2feb7f135a"/>
+                    <text value="Is there anything that you are worried about with your teeth?"/>
+                    <type value="boolean"/>
+                </item>
+                <item >
+                    <linkId value="4b193184-3709-4478-814a-e23d7263bfde"/>
+                    <text value="Details"/>
+                    <type value="text"/>
+                </item>
+                <item >
+                    <linkId value="23efd669-139f-4f7e-bd28-13d7a9c895a6"/>
+                    <text value="Last dental checkup"/>
+                    <type value="date"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="ba822d90-2d1f-496d-8cdc-ca61637c99c2"/>
+                <text value="Teeth and mouth check"/>
+                <type value="group"/>
+                <repeats value="false"/>
+                <item >
+                    <linkId value="16d83810-aa0f-4741-9a64-0d2caa7b936b"/>
+                    <text value="Examination findings"/>
+                    <type value="text"/>
+                </item>
+                <item >
+                    <linkId value="7e2b62e2-ef69-446e-a3ee-0b98e9d06965"/>
+                    <text value="Document conversation about oral health and care of teeth"/>
+                    <type value="text"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="ac1559c8-f03a-43a6-818f-9b31892ec2a7"/>
+            <text value="Examination"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery2.entry.resource.value.value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="29644716-433e-45ec-a805-8043f35a85e1"/>
+                <text value="Height (cm)"/>
+                <type value="decimal"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery4.entry.resource.value.value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="f5308669-d1f9-49a1-bedd-7420946e7288"/>
+                <text value="Weight (kg)"/>
+                <type value="decimal"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery6.entry.resource.value.value"/>
+                    </valueExpression>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit" >
+                    <valueCoding >
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="kg/m2"/>
+                    </valueCoding>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" >
+                    <valueExpression >
+                        <description value="BMI calculation"/>
+                        <language value="text/fhirpath"/>
+                        <expression value="(%weight/((%height/100).power(2))).round(1)"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="d9306be3-fedf-45ca-8b91-71e6f7f6c6f5"/>
+                <text value="BMI (kg/^2)"/>
+                <type value="decimal"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery3.entry.resource.value.value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="aadc1e74-8523-41e4-beaf-a4487bf79606"/>
+                <text value="Waist circumference (cm)"/>
+                <type value="decimal"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery7.entry.resource.select(component[0].value.select(value.toString()) + '/' + component[1].value.select(value.toString()) )"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="8b2f93a9-564f-4229-9522-2a4e145badc9"/>
+                <text value="Blood pressure"/>
+                <type value="string"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery5.entry.resource.value.value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="0c6fe11b-1fd4-482f-a805-d17aef2b8d6b"/>
+                <text value="Heart rate"/>
+                <type value="decimal"/>
+            </item>
+            <item >
+                <linkId value="0c6fe11b-1fd4-482f-a805-d17aef2b8d6c"/>
+                <text value="Heart rhythm"/>
+                <type value="choice"/>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="271636001"/>
+                        <display value="Pulse Regular"/>
+                    </valueCoding>
+                </answerOption>
+                <answerOption >
+                    <valueCoding >
+                        <system value="http://snomed.info/sct"/>
+                        <code value="61086009"/>
+                        <display value="Pulse Irregular"/>
+                    </valueCoding>
+                </answerOption>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="7845504e-859d-4834-a264-127bcbee8759"/>
+            <text value="Absolute cardiovascular risk calculation"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="75 or more"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery7.entry.resource.component.where(code.coding.where(code='8459-0')).value.value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="systolic-bp"/>
+                <text value="Systolic Blood Pressure"/>
+                <type value="decimal"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="2 or more"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery23.entry.resource.value.value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="tot-chol"/>
+                <text value="Total Cholesterol"/>
+                <type value="decimal"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="Between 0.2 - 5"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery24.entry.resource.value.value"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="hdl-chol"/>
+                <text value="HDL Cholesterol"/>
+                <type value="decimal"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                    <valueExpression >
+                        <language value="text/fhirpath"/>
+                        <expression value="%PrePopQuery21.entry.resource.code.coding.where(system='http://snomed.info/sct' and code='44054006').exists()"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="has-diabetes"/>
+                <text value="Diabetes"/>
+                <type value="boolean"/>
+                <repeats value="false"/>
+            </item>
+            <item >
+                <linkId value="ecg-lvh"/>
+                <text value="ECG LVH"/>
+                <type value="boolean"/>
+                <repeats value="false"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="auscvdrisk.com.au/risk-calculator/"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-unit" >
+                    <valueCoding >
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="%"/>
+                    </valueCoding>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract" >
+                    <valueBoolean value="true"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" >
+                    <valueExpression >
+                        <description value="CVD Risk Score"/>
+                        <language value="text/fhirpath"/>
+                        <expression value="%cvdScore.round(0)"/>
+                    </valueExpression>
+                </extension>
+                <linkId value="09c2de87-614f-4e5c-a496-387cab577ae5"/>
+                <code >
+                    <system value="http://snomed.info/sct"/>
+                    <code value="827181004"/>
+                    <display value="Risk of cardiovascular disease"/>
+                </code>
+                <text value="Cardiovascular risk calculated, details"/>
+                <type value="decimal"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="42b1e8b9-9393-4de2-8439-1f15fdc383ac"/>
+            <text value="Investigations"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="2715df61-d70b-468f-bb24-2cdf30c2112c"/>
+                <text value="Full blood count, HbA1c or blood glucose level, serum lipids, Kidney function including eGFR, Liver function tests, ACR"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="fa26f1da-c445-45a7-b443-450952e664a9"/>
+                <text value="Chlamydia, gonorrhoea: &lt;=30, first void urine (male and female) and/or endocervical swab or self-administered vaginal swab (female) or throat and anal swab (men who have sex with men [MSM])"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="75f21ab7-f053-46ae-a6bb-484c8904f984"/>
+                <text value="Syphilis (endemic areas, MSM, others at high risk)"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="66d0aa03-4d7a-49e1-b4eb-990ec800bd91"/>
+                <text value="Trichomoniasis (&lt;=30, male and female, remote areas and other endemic areas, first void urine and/or endocervical swab or self-administered vaginal swab)"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="4bed1c5f-5fc3-443c-a264-fd4b21bef0aa"/>
+                <text value="Blood-borne virus screening: HBV if status not known/not recorded on file, HCV if risk factors, HIV if risk factors"/>
+                <type value="text"/>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <linkId value="7c158125-129f-4fce-9557-32dd372c92c7"/>
+            <text value="Finalising the health check"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="ea87929f-5d49-4492-b384-696ebeb5b51b"/>
+                <text value="Patient priorities and goals: What does the patient say are the important things that have come out of this health check?"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="583ffc2e-9d70-4245-b30c-5183e75e05b3"/>
+                <text value="Brief intervention: advice and information provided during health check"/>
+                <type value="open-choice"/>
+            </item>
+            <item >
+                <linkId value="afbadad6-bef9-4fad-b5f4-111f666ccf11"/>
+                <text value="Care provided as part of the health check (eg immunisations, medication review, investigations requested)"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="4b3015f6-5b0a-4dfa-9791-994e4059f921"/>
+                <text value="Identified needs and plan: including new diagnoses"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <linkId value="a400fe69-c99f-47ed-bee1-083c3e4be467"/>
+                <text value="Recalls entered (eg clinical review, investigations, influenza vaccination, asthma plan/cycle of care, diabetes cycle of care, care plan review, cervical screening)"/>
+                <type value="group"/>
+                <repeats value="true"/>
+                <item >
+                    <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" >
+                        <valueBoolean value="true"/>
+                    </extension>
+                    <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" >
+                        <valueExpression >
+                            <language value="text/fhirpath"/>
+                            <expression value="%LaunchPatient.id"/>
+                        </valueExpression>
+                    </extension>
+                    <linkId value="40e3933d-77bb-40f3-8609-0c38ebb4421e"/>
+                    <definition value="http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp#CarePlan.subject.reference"/>
+                    <text value="recall-subject"/>
+                    <type value="string"/>
+                </item>
+                <item >
+                    <linkId value="fece6a3c-f8f1-4592-a166-5ea5a3c60c8e"/>
+                    <definition value="http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp#CarePlan.title"/>
+                    <text value="Recall"/>
+                    <type value="text"/>
+                </item>
+            </item>
+            <item >
+                <linkId value="7202e1d0-c5eb-4613-9c03-414610054784"/>
+                <text value="Patient actions"/>
+                <type value="text"/>
+            </item>
+            <item >
+                <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-instruction" >
+                    <valueString value="Consider what follow-up appointments can be made at the time of the health check. Reminder: MBS Items 10987 and 81300-81360 are available to support follow up of health checks"/>
+                </extension>
+                <linkId value="5760a1f9-d725-4b9e-b74d-50800615a689"/>
+                <text value="Follow-up"/>
+                <type value="group"/>
+                <repeats value="true"/>
+                <item >
+                    <linkId value="a52d02c5-bf1d-40af-ae9d-c40ab4f1ed91"/>
+                    <text value="Who"/>
+                    <type value="open-choice"/>
+                </item>
+                <item >
+                    <linkId value="20c461d1-1c76-445d-88af-c4515717d1eb"/>
+                    <text value="When"/>
+                    <type value="date"/>
+                </item>
+            </item>
+        </item>
+        <item >
+            <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" >
+                <valueCodeableConcept >
+                    <coding >
+                        <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+                        <code value="tab"/>
+                    </coding>
+                </valueCodeableConcept>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-shortText" >
+                <valueString value="Patient copy of health check"/>
+            </extension>
+            <linkId value="8176151f-6d86-45eb-91b1-12458d75a181"/>
+            <text value="Patient has been offered a copy of this health check including details of follow-up and future appointments"/>
+            <type value="group"/>
+            <repeats value="false"/>
+            <item >
+                <linkId value="2248db70-db7e-49cd-aff7-852377e7f186"/>
+                <text value="choice"/>
+                <type value="choice"/>
+            </item>
+        </item>
+    </item>
+</Questionnaire>
