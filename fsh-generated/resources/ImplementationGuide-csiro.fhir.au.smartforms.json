@@ -204,9 +204,9 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/Examination"
+          "reference": "Questionnaire/ExaminationExtract"
         },
-        "name": "Aboriginal and Torres Strait Islander Health Check - Examination",
+        "name": "Aboriginal and Torres Strait Islander Health Check - Examination Extract",
         "description": "Examination sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
         "exampleBoolean": false
       },

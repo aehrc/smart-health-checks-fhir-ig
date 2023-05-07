@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "Examination",
+  "id": "ExaminationExtract",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-render",
@@ -8,7 +8,7 @@
       "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp"
     ]
   },
-  "url": "http://www.health.gov.au/assessments/mbs/715/Examination",
+  "url": "http://www.health.gov.au/assessments/mbs/715/ExaminationExtract",
   "item": [
     {
       "extension": [
@@ -21,6 +21,13 @@
                 "system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended"
               }
             ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext",
+          "valueExpression": {
+            "language": "application/x-fhir-query",
+            "expression": "Observation?patient={{%patient.id}}"
           }
         }
       ],
@@ -76,6 +83,7 @@
             }
           ],
           "linkId": "7df41f88-6511-4793-a26a-d96fcd89fbba",
+          "definition": "http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight#Observation.valueQuantity",
           "text": "Length/Height",
           "type": "decimal",
           "repeats": false,
@@ -125,6 +133,7 @@
             }
           ],
           "linkId": "2d68889b-88c1-4c6d-8b00-db4178dc1f52",
+          "definition": "http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight#Observation.valueQuantity",
           "text": "Height",
           "type": "decimal",
           "repeats": false,
@@ -571,8 +580,8 @@
       ]
     }
   ],
-  "name": "Examination",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Examination",
+  "name": "ExaminationExtract",
+  "title": "Aboriginal and Torres Strait Islander Health Check - ExaminationExtract",
   "status": "draft",
   "experimental": false,
   "subjectType": [
