@@ -54,7 +54,6 @@ Description: "Immunisation sub-questionnaire for Aboriginal and Torres Strait Is
     * linkId = "54de7714-b917-4426-acb4-29d48648a2d8"
     * text = "Check Child Health Record/Book and Australian Immunisation Register"
     * type = #display
-    * repeats = false
     * enableWhen[+]
       * question = "e2a16e4d-2765-4b61-b286-82cfc6356b30" // age item which has initial population from variable
       * operator = #<=
@@ -63,7 +62,6 @@ Description: "Immunisation sub-questionnaire for Aboriginal and Torres Strait Is
     * linkId = "d77c527d-6fde-4ed7-97b9-c71acf817f39"
     * text = "Eligibility for funded vaccines may vary across jurisdictions"
     * type = #display
-    * repeats = false
     * enableWhen[+]
       * question = "e2a16e4d-2765-4b61-b286-82cfc6356b30" // age item which has initial population from variable
       * operator = #>
@@ -72,7 +70,6 @@ Description: "Immunisation sub-questionnaire for Aboriginal and Torres Strait Is
     * linkId = "77d87581-d4d7-4267-9f3c-ad6541ad0f46"
     * text = "Check Australian Immunisation Register"
     * type = #display
-    * repeats = false
     * enableWhen[+]
       * question = "e2a16e4d-2765-4b61-b286-82cfc6356b30" // age item which has initial population from variable
       * operator = #>
@@ -86,7 +83,6 @@ Description: "Immunisation sub-questionnaire for Aboriginal and Torres Strait Is
     * linkId = "a2631d2c-2b5c-4147-9aca-05ae655a56a5"
     * text = "Check recommended primary vaccinations completed and provide catch-up if required"
     * type = #display
-    * repeats = false
     * enableWhen[+]
       * question = "e2a16e4d-2765-4b61-b286-82cfc6356b30" // age item which has initial population from variable
       * operator = #>

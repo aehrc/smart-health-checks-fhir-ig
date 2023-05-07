@@ -81,7 +81,6 @@ Description: "Social And Emotional Wellbeing sub-questionnaire for Aboriginal an
     * linkId = "7d783b71-7303-441b-822a-14e11a740038"
     * text = "Social and emotional wellbeing assessment: consider tools such as Aboriginal and Torres Strait Islander Youth Social Emotional Wellbeing assessment question guide or HEEADSSS"
     * type = #display
-    * repeats = false
     * enableWhen[+]
       * question = "e2a16e4d-2765-4b61-b286-82cfc6356b30" // age item which has initial population from variable
       * operator = #<=

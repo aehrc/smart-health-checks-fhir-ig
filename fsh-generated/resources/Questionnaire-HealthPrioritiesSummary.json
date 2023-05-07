@@ -32,8 +32,7 @@
         {
           "linkId": "f948fb81-48e9-4bc6-bf81-8d778ac4375a",
           "text": "The following information is a read-only collection of the 'Health priorities, actions and follow-up' sections entered in the previous tabs.",
-          "type": "display",
-          "repeats": false
+          "type": "display"
         },
         {
           "extension": [

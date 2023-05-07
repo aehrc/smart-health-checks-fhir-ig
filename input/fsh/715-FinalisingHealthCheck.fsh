@@ -219,13 +219,11 @@ Description: "Finalising the Health Check sub-questionnaire for Aboriginal and T
       * linkId = "b4110a63-8547-4aa2-84c6-c1f64f0d24da"
       * text = "Consider what follow-up appointments can be made at the time of the health check."
       * type = #display
-      * repeats = false
     * item[+]
       * extension[http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory].valueCodeableConcept = http://hl7.org/fhir/questionnaire-display-category#instructions
       * linkId = "c47cfd7e-0f15-4dd9-bd53-bb62851b677c"
       * text = "Reminder: MBS follow up items for clients at risk of or with chronic disease are available to support follow-up of health checks"
       * type = #display
-      * repeats = false
     * item[+]
       * linkId = "1be25c55-2a2d-4b94-b826-bd17d9e35e92"
       * text = "Referrals and appointments"

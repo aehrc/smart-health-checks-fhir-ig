@@ -57,7 +57,6 @@ Description: "Examination sub-questionnaire for Aboriginal and Torres Strait Isl
     * linkId = "d15824f8-eafc-4fa0-80a2-82f0ec7f8728"
     * text = "Growth measures recorded on Centers for Disease Control and Prevention (CDC) and World Health Organization (WHO) growth charts for centile and tracking overtime"
     * type = #display
-    * repeats = false
     * enableWhen[+]
       * question = "e2a16e4d-2765-4b61-b286-82cfc6356b30" // age item which has initial population from variable
       * operator = #<=

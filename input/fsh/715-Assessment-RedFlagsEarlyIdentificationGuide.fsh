@@ -57,7 +57,6 @@ Description: "Red Flags Early Identification Guide For Children sub-questionnair
     * linkId = "dfbf13b5-e9e1-4f2f-83fc-1b3b9e50c921"
     * text = "This is based on material from the The State of Queensland, Red flags early identification guide (for children aged birth to five years). 2nd edn. South Brisbane, Qld: Child Development Program, Queensland Health, 2016. Available at www.childrens.health.qld.gov.au/wp-content/uploads/PDF/red-flags-a3.pdf [Accessed 2 December 2019]. © Developed by the Child Development Program in conjunction with Brisbane North Primary Health Network. Updated: July 2016."
     * type = #display
-    * repeats = false
   * item[+]
     * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#check-box
     * linkId = "0b520b20-98df-4024-b25d-2986f6b96e77"

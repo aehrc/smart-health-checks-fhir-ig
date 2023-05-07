@@ -54,8 +54,7 @@ Description: "Health Priorities, Actions And Follow-Up Summary sub-questionnaire
   * item[+]
     * linkId = "f948fb81-48e9-4bc6-bf81-8d778ac4375a"
     * text = "The following information is a read-only collection of the 'Health priorities, actions and follow-up' sections entered in the previous tabs."
-    * type = #display
-    * repeats = false 
+    * type = #display 
   * item[+]
     * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression].valueExpression
       * description = "Current priorities calculation"

@@ -173,8 +173,7 @@ Description: "Ear Health And Hearing sub-questionnaire for Aboriginal and Torres
         * extension[questionnaire-displayCategory].valueCodeableConcept = http://hl7.org/fhir/questionnaire-displayCategory#instructions
         * linkId = "fe96046a-a202-4c22-ad3e-00419e717185"
         * text = "Video otoscopy procedure recommended where possible as it allows for parental education and for images to be saved for tracking over time"
-        * type = #display
-        * repeats = false 
+        * type = #display 
         * enableWhen[+]
           * question = "e2a16e4d-2765-4b61-b286-82cfc6356b30" // age item which has initial population from variable
           * operator = #<=
