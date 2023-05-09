@@ -25,6 +25,11 @@ Description: "Aboriginal and Torres Strait Islander Health Check assessment form
   * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assemble-expectation"
   * valueCode = #assemble-root
 
+//Observation extract
+* extension[+]
+  * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+  * valueBoolean = true
+
 //launch context
 * extension[+]
   * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"

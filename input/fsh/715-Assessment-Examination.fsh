@@ -42,9 +42,6 @@ Description: "Examination sub-questionnaire for Aboriginal and Torres Strait Isl
 
 * item[+]
   * extension[questionnaire-itemControl].valueCodeableConcept = https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended#tab
-  * extension[sdc-questionnaire-itemExtractionContext].valueExpression
-    * language = #application/x-fhir-query
-    * expression = "Observation?patient={{%patient.id}}"
   * linkId = "c587e3b6-b91a-40dc-9a16-179342d001e9"
   * text = "Examination"
   * type = #group
@@ -67,7 +64,15 @@ Description: "Examination sub-questionnaire for Aboriginal and Torres Strait Isl
       * expression = "%ObsBodyHeight.entry.resource.value.value"
     * extension[http://hl7.org/fhir/StructureDefinition/questionnaire-unit].valueCoding = $UCUM#cm
     * linkId = "7df41f88-6511-4793-a26a-d96fcd89fbba"
-    * definition = "http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight#Observation.valueQuantity"
+    * code[+]
+      * system = $LNC
+      * code = #8306-3
+    * code[+]
+      * system = $LNC
+      * code = #8302-2
+    * code[+]
+      * system = $SCT
+      * code = #50373000
     * text = "Length/Height"
     * type = #decimal
     * repeats = false

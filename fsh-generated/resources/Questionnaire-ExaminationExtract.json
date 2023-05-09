@@ -22,13 +22,6 @@
               }
             ]
           }
-        },
-        {
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext",
-          "valueExpression": {
-            "language": "application/x-fhir-query",
-            "expression": "Observation?patient={{%patient.id}}"
-          }
         }
       ],
       "item": [
@@ -82,7 +75,20 @@
             }
           ],
           "linkId": "7df41f88-6511-4793-a26a-d96fcd89fbba",
-          "definition": "http://hl7.org.au/fhir/core/StructureDefinition/au-core-bodyheight#Observation.valueQuantity",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "8306-3"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "50373000"
+            }
+          ],
           "text": "Length/Height",
           "type": "decimal",
           "repeats": false,
