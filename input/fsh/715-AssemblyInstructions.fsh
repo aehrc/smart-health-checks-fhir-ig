@@ -167,9 +167,9 @@ Description: "Aboriginal and Torres Strait Islander Health Check assessment form
 
 // Root 
 * item[+] 
+  * extension[http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl][+].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control|0.1.0#tab-container
   * linkId = "fd5af92e-c248-497a-8007-ee0952ccd4d9"  
   * type = #group
-  * extension[http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl][+].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control|0.1.0#tab-container
  //Non-prepop variables
   * extension[http://hl7.org/fhir/StructureDefinition/variable][+].valueExpression
     * name = "weight"

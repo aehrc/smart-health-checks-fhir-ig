@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "QuestionnaireItemControlExtended",
+  "id": "QuestionnaireItemControlExtended",
+  "title": "Questionnaire Item Control Extension",
+  "description": "The Questionnaire Item Control Extension code system defines concepts that extend the HL7 questionnaire item control concepts in http://hl7.org/fhir/questionnaire-item-control. They represent interface control/display mechanisms interface control/display mechanisms that might be used when rendering an item in a questionnaire.",
+  "version": "0.1.0",
+  "url": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+  "concept": [
+    {
+      "code": "context-display",
+      "display": "context-display",
+      "definition": "An additional display item is rendered adjacent (horizontally or vertically) to the text of the parent item."
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 1
+}

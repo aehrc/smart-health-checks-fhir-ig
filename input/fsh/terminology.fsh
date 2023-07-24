@@ -401,6 +401,14 @@ Description: "The Medical History Short List for Adults and Older People value s
 * $SCT#82271004 // "Significant head trauma" // the concept id is "Head inujury", which is more broad in meaning
 * $SCT#413307004 // "Mental health"
 
+CodeSystem: QuestionnaireItemControlExtended
+Id: QuestionnaireItemControlExtended
+Title: "Questionnaire Item Control Extension"
+Description: "The Questionnaire Item Control Extension code system defines concepts that extend the HL7 questionnaire item control concepts in http://hl7.org/fhir/questionnaire-item-control. They represent interface control/display mechanisms interface control/display mechanisms that might be used when rendering an item in a questionnaire."
+
+* ^experimental = false
+* ^caseSensitive = true
+* #context-display "context-display" "An display item rendered adjacent (horizontally or vertically) to the text of the parent item."
 
 ValueSet: ConditionClinicalStatusCodes
 Id: condition-clinical
