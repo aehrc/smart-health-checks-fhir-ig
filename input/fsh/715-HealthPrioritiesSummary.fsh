@@ -52,6 +52,7 @@ Description: "Health Priorities, Actions And Follow-Up Summary sub-questionnaire
 
 // some linkIds maintained from full assessment questionnaire
 * item[+]
+  * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible].valueCode = #default-closed
   * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression].valueExpression
     * language = #text/fhirpath
     * expression = "%age.exists()"

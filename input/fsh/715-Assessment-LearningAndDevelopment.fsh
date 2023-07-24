@@ -51,6 +51,7 @@ Description: "Learning And Development sub-questionnaire for Aboriginal and Torr
 
 // This questionnaire attempts to somewhat harmonise the infant and adolescent templates but there are differences that will require confirmation.
 * item[+]
+  * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible].valueCode = #default-closed
   * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression].valueExpression
     * language = #text/fhirpath
     * expression = "%age <= 12"

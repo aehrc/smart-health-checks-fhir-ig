@@ -124,6 +124,7 @@ Description: "Sexual Health sub-questionnaire for Aboriginal and Torres Strait I
   
 //Adults
 * item[+]
+  * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible].valueCode = #default-closed
   * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression].valueExpression
     * language = #text/fhirpath
     * expression = "(%age > 24).intersect(%age <= 49)"
@@ -205,6 +206,7 @@ Description: "Sexual Health sub-questionnaire for Aboriginal and Torres Strait I
 
 //Older people
 * item[+]
+  * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible].valueCode = #default-closed
   * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression].valueExpression
     * language = #text/fhirpath
     * expression = "%age >= 50"

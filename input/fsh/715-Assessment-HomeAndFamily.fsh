@@ -53,6 +53,7 @@ Description: "Home And Family sub-questionnaire for Aboriginal and Torres Strait
 
 // for adolescents and up
 * item[+]
+  * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible].valueCode = #default-closed
   * extension[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression].valueExpression
     * language = #text/fhirpath
     * expression = "%age > 12"
