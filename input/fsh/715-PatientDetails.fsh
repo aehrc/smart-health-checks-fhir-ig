@@ -98,7 +98,7 @@ Description: "Patient Details sub-questionnaire for Aboriginal and Torres Strait
   * item[+]
     * extension[sdc-questionnaire-initialExpression].valueExpression
       * language = #text/fhirpath
-      * expression = "%patient.extension('http://hl7.org.au/fhir/StructureDefinition/indigenous-status').value"
+      * expression = "%patient.extension.where(url='http://hl7.org.au/fhir/StructureDefinition/indigenous-status').value"
     * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
     * linkId = "8acde9f8-7a91-4f0c-9216-38531ec984ef"
     * text = "Aboriginal and/or Torres Strait Islander status"
