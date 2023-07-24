@@ -246,7 +246,7 @@
           "text": "Other relevant medical history, operations, hospital admissions, etc",
           "type": "open-choice",
           "repeats": true,
-          "answerValueSet": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistory"
+          "answerValueSet": "#MedicalHistory"
         },
         {
           "linkId": "f00def30-35dd-401a-9a38-12602bd3b8b1",
@@ -301,7 +301,7 @@
               "linkId": "59b1900a-4f85-4a8c-b9cd-3fe2fd76f27e",
               "text": "Condition",
               "type": "open-choice",
-              "answerValueSet": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistory"
+              "answerValueSet": "#MedicalHistory"
             },
             {
               "extension": [
