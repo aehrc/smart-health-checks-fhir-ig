@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/CurrentPriorities",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Current Priorities",
+  "description": "Current Priorities sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -252,11 +254,10 @@
     {
       "resourceType": "ValueSet",
       "id": "YesNo",
-      "status": "active",
+      "status": "draft",
       "name": "YesNo",
       "title": "Yes No",
       "description": "Concepts for Yes and No",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/YesNo",
       "experimental": false,
       "expansion": {
@@ -357,7 +358,6 @@
     }
   ],
   "name": "CurrentPriorities",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Current Priorities",
   "status": "draft",
   "experimental": false,
   "subjectType": [

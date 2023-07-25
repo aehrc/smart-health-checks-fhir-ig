@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/Examination",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Examination",
+  "description": "Examination sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -761,7 +763,6 @@
     }
   ],
   "name": "Examination",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Examination",
   "status": "draft",
   "experimental": false,
   "subjectType": [

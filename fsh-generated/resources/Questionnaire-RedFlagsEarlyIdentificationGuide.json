@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/RedFlagsEarlyIdentificationGuide",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Red Flags Early Identification Guide For Children",
+  "description": "Red Flags Early Identification Guide For Children sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -1261,7 +1263,6 @@
     }
   ],
   "name": "RedFlagsEarlyIdentificationGuideForChildren",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Red Flags Early Identification Guide For Children",
   "status": "draft",
   "experimental": false,
   "subjectType": [

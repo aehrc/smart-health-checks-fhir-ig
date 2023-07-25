@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715",
+  "title": "Aboriginal and Torres Strait Islander Health Check",
+  "description": "Aboriginal and Torres Strait Islander Health Check assessment form.",
   "item": [
     {
       "extension": [
@@ -846,11 +848,10 @@
     {
       "resourceType": "ValueSet",
       "id": "YesNo",
-      "status": "active",
+      "status": "draft",
       "name": "YesNo",
       "title": "Yes No",
       "description": "Concepts for Yes and No",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/YesNo",
       "experimental": false,
       "expansion": {
@@ -906,11 +907,10 @@
     {
       "resourceType": "ValueSet",
       "id": "YesNoNA",
-      "status": "active",
+      "status": "draft",
       "name": "YesNoNA",
       "title": "Yes No NA",
       "description": "Concepts for Yes, No and Not applicable",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/YesNoNA",
       "experimental": false,
       "expansion": {
@@ -987,11 +987,10 @@
     {
       "resourceType": "ValueSet",
       "id": "MedicalHistory",
-      "status": "active",
+      "status": "draft",
       "name": "MedicalHistory",
       "title": "Medical History",
       "description": "The Medical History value set includes values that may be used to represent medical history, operations and hospital admissions.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistory",
       "experimental": false,
       "compose": {
@@ -1012,11 +1011,10 @@
     {
       "resourceType": "ValueSet",
       "id": "MedicalHistoryShortListInfants",
-      "status": "active",
+      "status": "draft",
       "name": "MedicalHistoryShortListInfants",
       "title": "Medical History Short List for Infants",
       "description": "The Medical History Short List for Infants value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Infants.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistoryShortListInfants",
       "experimental": false,
       "expansion": {
@@ -1158,11 +1156,10 @@
     {
       "resourceType": "ValueSet",
       "id": "MedicalHistoryShortListPrimarySchool",
-      "status": "active",
+      "status": "draft",
       "name": "MedicalHistoryShortListPrimarySchool",
       "title": "Medical History Short List for Primary School Children",
       "description": "The Medical History Short List for Primary School Children value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Primary School Children.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistoryShortListPrimarySchool",
       "experimental": false,
       "expansion": {
@@ -1288,11 +1285,10 @@
     {
       "resourceType": "ValueSet",
       "id": "MedicalHistoryShortListAdolescents",
-      "status": "active",
+      "status": "draft",
       "name": "MedicalHistoryShortListAdolescents",
       "title": "Medical History Short List for Adolescents",
       "description": "The Medical History Short List for Adolescents value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Adolescents.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistoryShortListAdolescents",
       "experimental": false,
       "expansion": {
@@ -1418,11 +1414,10 @@
     {
       "resourceType": "ValueSet",
       "id": "MedicalHistoryShortListAdultsAndOlderPeople",
-      "status": "active",
+      "status": "draft",
       "name": "MedicalHistoryShortListAdultsAndOlderPeople",
       "title": "Medical History Short List for Adults and Older People",
       "description": "The Medical History Short List for Adults and Older People value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Adults and Older People.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistoryShortListAdultsAndOlderPeople",
       "experimental": false,
       "expansion": {
@@ -1573,7 +1568,6 @@
       "name": "ConditionClinicalStatusCodes",
       "title": "Condition Clinical Status Codes",
       "description": "Preferred value set for Condition Clinical Status.",
-      "version": "4.3.0",
       "url": "http://hl7.org/fhir/ValueSet/condition-clinical",
       "extension": [
         {
@@ -1595,6 +1589,7 @@
           "value": "urn:oid:2.16.840.1.113883.4.642.3.164"
         }
       ],
+      "version": "4.3.0",
       "experimental": false,
       "publisher": "FHIR Project team",
       "contact": [
@@ -1670,11 +1665,10 @@
     {
       "resourceType": "ValueSet",
       "id": "AboriginalTorresStraitIslander",
-      "status": "active",
+      "status": "draft",
       "name": "AboriginalTorresStraitIslander",
       "title": "Aboriginal and/or Torres Strait Islander",
       "description": "The Aboriginal and/or Torres Strait Islander value set includes the Australian Indigenous statuses for Indigenous people.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/AboriginalTorresStraitIslander",
       "experimental": false,
       "expansion": {
@@ -1739,11 +1733,10 @@
     {
       "resourceType": "ValueSet",
       "id": "PrimaryCarerParentGrandparent",
-      "status": "active",
+      "status": "draft",
       "name": "PrimaryCarerParentGrandparent",
       "title": "Primary Carer Of Parent Or Grandparent",
       "description": "The Primary Carer Of Parent Or Grandparent value set includes values that can indicate whether a primary carer is one of the parents or a grandparent.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/PrimaryCarerParentGrandparent",
       "experimental": false,
       "expansion": {
@@ -2020,7 +2013,6 @@
   ],
   "version": "0.1.0",
   "name": "AboriginalTorresStraitIslanderHealthCheck",
-  "title": "Aboriginal and Torres Strait Islander Health Check",
   "status": "draft",
   "experimental": false,
   "subjectType": [

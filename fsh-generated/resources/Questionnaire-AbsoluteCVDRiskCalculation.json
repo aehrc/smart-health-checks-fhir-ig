@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/AbsoluteCVDRiskCalculation",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Absolute Cardiovascular Disease Risk Calculation",
+  "description": "Absolute Cardiovascular Disease Risk Calculation sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -320,7 +322,6 @@
     }
   ],
   "name": "AbsoluteCVDRiskCalculation",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Absolute Cardiovascular Disease Risk Calculation",
   "status": "draft",
   "experimental": false,
   "subjectType": [

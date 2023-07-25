@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "YesNoNA",
   "id": "YesNoNA",
   "title": "Yes No NA",
   "description": "Concepts for Yes, No and Not applicable",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/YesNoNA",
   "experimental": false,
   "expansion": {

@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/AllergiesAdverseReactions",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Allergies/Adverse Reactions",
+  "description": "Allergies/Adverse Reactions sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -104,7 +106,6 @@
     }
   ],
   "name": "AllergiesAdverseReactions",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Allergies/Adverse Reactions",
   "status": "draft",
   "experimental": false,
   "subjectType": [

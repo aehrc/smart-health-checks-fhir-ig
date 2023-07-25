@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/HealthPrioritiesSummary",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Health Priorities, Actions And Follow-Up Summary",
+  "description": "Health Priorities, Actions And Follow-Up Summary sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -755,7 +757,6 @@
     }
   ],
   "name": "HealthPrioritiesActionsAndFollowUpSummary",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Health Priorities, Actions And Follow-Up Summary",
   "status": "draft",
   "experimental": false,
   "subjectType": [

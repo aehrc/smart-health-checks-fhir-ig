@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "YesNo",
   "id": "YesNo",
   "title": "Yes No",
   "description": "Concepts for Yes and No",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/YesNo",
   "experimental": false,
   "expansion": {

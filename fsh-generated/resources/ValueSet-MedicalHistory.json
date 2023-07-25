@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "MedicalHistory",
   "id": "MedicalHistory",
   "title": "Medical History",
   "description": "The Medical History value set includes values that may be used to represent medical history, operations and hospital admissions.",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistory",
   "experimental": false,
   "compose": {

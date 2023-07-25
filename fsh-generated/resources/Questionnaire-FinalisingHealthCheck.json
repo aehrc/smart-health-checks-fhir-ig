@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/FinalisingHealthCheck",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Finalising the Health Check",
+  "description": "Finalising the Health Check sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -968,7 +970,6 @@
     }
   ],
   "name": "FinalisingHealthCheck",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Finalising the Health Check",
   "status": "draft",
   "experimental": false,
   "subjectType": [

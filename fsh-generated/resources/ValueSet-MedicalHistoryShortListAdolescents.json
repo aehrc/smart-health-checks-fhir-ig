@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "MedicalHistoryShortListAdolescents",
   "id": "MedicalHistoryShortListAdolescents",
   "title": "Medical History Short List for Adolescents",
   "description": "The Medical History Short List for Adolescents value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Adolescents.",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistoryShortListAdolescents",
   "experimental": false,
   "expansion": {

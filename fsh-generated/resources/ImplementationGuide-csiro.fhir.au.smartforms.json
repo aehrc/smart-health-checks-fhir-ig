@@ -44,107 +44,18 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/ContainedResourceReference"
+          "reference": "Questionnaire/AssemblyInstructions"
         },
-        "name": "Contained Resource Reference",
-        "description": "This extension is intended to be used as a work around to a known bug whereby contained resources that are not referenced with the type, 'Reference' are removed before a resource is created in a HAPI FHIR server. This is problematic when referencing with the type, 'canonical'. The extension can be used to reference contained resources so they are retained when added to a HAPI FHIR server.",
+        "name": "Aboriginal and Torres Strait Islander Health Check",
+        "description": "Aboriginal and Torres Strait Islander Health Check assessment form.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/AboriginalTorresStraitIslander"
+          "reference": "Questionnaire/AboriginalTorresStraitIslanderHealthCheck"
         },
-        "name": "Aboriginal and/or Torres Strait Islander",
-        "description": "The Aboriginal and/or Torres Strait Islander value set includes the Australian Indigenous statuses for Indigenous people.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/australian-states-territories-2"
-        },
-        "name": "Australian States and Territories",
-        "description": "The Australian States and Territories value set includes values that represent the Australian states and territories.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/condition-clinical"
-        },
-        "name": "Condition Clinical Status Codes",
-        "description": "Preferred value set for Condition Clinical Status.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/MedicalHistory"
-        },
-        "name": "Medical History",
-        "description": "The Medical History value set includes values that may be used to represent medical history, operations and hospital admissions.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/MedicalHistoryShortListAdolescents"
-        },
-        "name": "Medical History Short List for Adolescents",
-        "description": "The Medical History Short List for Adolescents value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Adolescents.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/MedicalHistoryShortListAdultsAndOlderPeople"
-        },
-        "name": "Medical History Short List for Adults and Older People",
-        "description": "The Medical History Short List for Adults and Older People value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Adults and Older People.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/MedicalHistoryShortListInfants"
-        },
-        "name": "Medical History Short List for Infants",
-        "description": "The Medical History Short List for Infants value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Infants.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/MedicalHistoryShortListPrimarySchool"
-        },
-        "name": "Medical History Short List for Primary School Children",
-        "description": "The Medical History Short List for Primary School Children value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Primary School Children.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/PrimaryCarerParentGrandparent"
-        },
-        "name": "Primary Carer Of Parent Or Grandparent",
-        "description": "The Primary Carer Of Parent Or Grandparent value set includes values that can indicate whether a primary carer is one of the parents or a grandparent.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/YesNo"
-        },
-        "name": "Yes No",
-        "description": "Concepts for Yes and No",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/YesNoNA"
-        },
-        "name": "Yes No NA",
-        "description": "Concepts for Yes, No and Not applicable",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/QuestionnaireItemControlExtended"
-        },
-        "name": "Questionnaire Item Control Extension",
-        "description": "The Questionnaire Item Control Extension code system defines concepts that extend the HL7 questionnaire item control concepts in http://hl7.org/fhir/questionnaire-item-control. They represent interface control/display mechanisms interface control/display mechanisms that might be used when rendering an item in a questionnaire.",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "Aboriginal and Torres Strait Islander Health Check"
       },
       {
         "reference": {
@@ -168,14 +79,6 @@
         },
         "name": "Aboriginal and Torres Strait Islander Health Check - Allergies/Adverse Reactions",
         "description": "Allergies/Adverse Reactions sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/AssemblyInstructions"
-        },
-        "name": "Aboriginal and Torres Strait Islander Health Check",
-        "description": "Aboriginal and Torres Strait Islander Health Check assessment form.",
         "exampleBoolean": false
       },
       {
@@ -348,14 +251,6 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/PhysicalActivityAndScreenTime"
-        },
-        "name": "Physical Activity And Screen Time",
-        "description": "Physical Activity And Screen Time sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Questionnaire/RedFlagsEarlyIdentificationGuide"
         },
         "name": "Aboriginal and Torres Strait Islander Health Check - Red Flags Early Identification Guide For Children",
@@ -420,27 +315,99 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/SFLauncherServerAboriginalTorresStraitIslanderHealthCheck"
+          "reference": "ValueSet/AboriginalTorresStraitIslander"
         },
-        "description": "This CapabilityStatement describes the expected capabilities for systems to launch and exchange data with the [Smart Forms client application](CapabilityStatement-SmartFormsApplication.html) to support the [Aboriginal and Torres Strait Islander Health Check](Questionnaire-AboriginalTorresStraitIslanderHealthCheck.html). It lists the server's conformance expectations for the resource types required as a launch context, resource types required to support prepopulation of the form, and QuestionnaireResponse requirements for managing form responses. These expectations include supported FHIR profiles, RESTful operations, and search parameters.",
-        "exampleBoolean": false,
-        "name": "Smart Forms Launcher Server for the Aboriginal and Torres Strait Islander Health Check"
+        "name": "Aboriginal and/or Torres Strait Islander",
+        "description": "The Aboriginal and/or Torres Strait Islander value set includes the Australian Indigenous statuses for Indigenous people.",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/SmartFormsApplication"
+          "reference": "ValueSet/australian-states-territories-2"
         },
-        "description": "This CapabilityStatement describes the capabilities of the Smart Forms Application. These capabilities include supported FHIR profiles, RESTful operations, and search parameters. It covers supported tasks such as SMART App launch context, prepopulation and completion of forms.",
-        "exampleBoolean": false,
-        "name": "Smart Forms Application"
+        "name": "Australian States and Territories",
+        "description": "The Australian States and Territories value set includes values that represent the Australian states and territories.",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/SmartFormsServer"
+          "reference": "ValueSet/condition-clinical"
         },
-        "description": "This CapabilityStatement describes the capabilities of the Smart Forms Server. The Smart Forms Server provides a definitional repository of resources that a client application can retrieve for use in a Smart Forms context. The capabilities listed include supported FHIR profiles, RESTful operations, and search parameters.",
-        "exampleBoolean": false,
-        "name": "Smart Forms Server"
+        "name": "Condition Clinical Status Codes",
+        "description": "Preferred value set for Condition Clinical Status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ContainedResourceReference"
+        },
+        "name": "Contained Resource Reference",
+        "description": "This extension is intended to be used as a work around to a known bug whereby contained resources that are not referenced with the type, 'Reference' are removed before a resource is created in a HAPI FHIR server. This is problematic when referencing with the type, 'canonical'. The extension can be used to reference contained resources so they are retained when added to a HAPI FHIR server.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MedicalHistory"
+        },
+        "name": "Medical History",
+        "description": "The Medical History value set includes values that may be used to represent medical history, operations and hospital admissions.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MedicalHistoryShortListAdolescents"
+        },
+        "name": "Medical History Short List for Adolescents",
+        "description": "The Medical History Short List for Adolescents value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Adolescents.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MedicalHistoryShortListAdultsAndOlderPeople"
+        },
+        "name": "Medical History Short List for Adults and Older People",
+        "description": "The Medical History Short List for Adults and Older People value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Adults and Older People.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MedicalHistoryShortListInfants"
+        },
+        "name": "Medical History Short List for Infants",
+        "description": "The Medical History Short List for Infants value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Infants.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MedicalHistoryShortListPrimarySchool"
+        },
+        "name": "Medical History Short List for Primary School Children",
+        "description": "The Medical History Short List for Primary School Children value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Primary School Children.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/PhysicalActivityAndScreenTime"
+        },
+        "name": "Physical Activity And Screen Time",
+        "description": "Physical Activity And Screen Time sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/PrimaryCarerParentGrandparent"
+        },
+        "name": "Primary Carer Of Parent Or Grandparent",
+        "description": "The Primary Carer Of Parent Or Grandparent value set includes values that can indicate whether a primary carer is one of the parents or a grandparent.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/QuestionnaireItemControlExtended"
+        },
+        "name": "Questionnaire Item Control Extension",
+        "description": "The Questionnaire Item Control Extension code system defines concepts that extend the HL7 questionnaire item control concepts in http://hl7.org/fhir/questionnaire-item-control. They represent interface control/display mechanisms interface control/display mechanisms that might be used when rendering an item in a questionnaire.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -452,18 +419,51 @@
       },
       {
         "reference": {
-          "reference": "Questionnaire/AboriginalTorresStraitIslanderHealthCheck"
-        },
-        "exampleBoolean": false,
-        "name": "Aboriginal and Torres Strait Islander Health Check"
-      },
-      {
-        "reference": {
           "reference": "ValueSet/questionnaire-item-control"
         },
         "description": "Starter set of user interface control/display mechanisms that might be used when rendering an item in a questionnaire.",
         "exampleBoolean": false,
         "name": "Questionnaire Item UI Control Codes"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/SmartFormsApplication"
+        },
+        "description": "This CapabilityStatement describes the capabilities of the Smart Forms Application. These capabilities include supported FHIR profiles, RESTful operations, and search parameters. It covers supported tasks such as SMART App launch context, prepopulation and completion of forms.",
+        "exampleBoolean": false,
+        "name": "Smart Forms Application"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/SFLauncherServerAboriginalTorresStraitIslanderHealthCheck"
+        },
+        "description": "This CapabilityStatement describes the expected capabilities for systems to launch and exchange data with the [Smart Forms client application](CapabilityStatement-SmartFormsApplication.html) to support the [Aboriginal and Torres Strait Islander Health Check](Questionnaire-AboriginalTorresStraitIslanderHealthCheck.html). It lists the server's conformance expectations for the resource types required as a launch context, resource types required to support prepopulation of the form, and QuestionnaireResponse requirements for managing form responses. These expectations include supported FHIR profiles, RESTful operations, and search parameters.",
+        "exampleBoolean": false,
+        "name": "Smart Forms Launcher Server for the Aboriginal and Torres Strait Islander Health Check"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/SmartFormsServer"
+        },
+        "description": "This CapabilityStatement describes the capabilities of the Smart Forms Server. The Smart Forms Server provides a definitional repository of resources that a client application can retrieve for use in a Smart Forms context. The capabilities listed include supported FHIR profiles, RESTful operations, and search parameters.",
+        "exampleBoolean": false,
+        "name": "Smart Forms Server"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/YesNo"
+        },
+        "name": "Yes No",
+        "description": "Concepts for Yes and No",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/YesNoNA"
+        },
+        "name": "Yes No NA",
+        "description": "Concepts for Yes, No and Not applicable",
+        "exampleBoolean": false
       }
     ],
     "page": {

@@ -5,7 +5,6 @@
   "id": "condition-clinical",
   "title": "Condition Clinical Status Codes",
   "description": "Preferred value set for Condition Clinical Status.",
-  "version": "4.3.0",
   "url": "http://hl7.org/fhir/ValueSet/condition-clinical",
   "meta": {
     "profile": [
@@ -32,6 +31,7 @@
       "value": "urn:oid:2.16.840.1.113883.4.642.3.164"
     }
   ],
+  "version": "4.3.0",
   "experimental": false,
   "publisher": "FHIR Project team",
   "contact": [

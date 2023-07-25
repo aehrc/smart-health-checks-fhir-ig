@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "MedicalHistoryShortListPrimarySchool",
   "id": "MedicalHistoryShortListPrimarySchool",
   "title": "Medical History Short List for Primary School Children",
   "description": "The Medical History Short List for Primary School Children value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Primary School Children.",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistoryShortListPrimarySchool",
   "experimental": false,
   "expansion": {

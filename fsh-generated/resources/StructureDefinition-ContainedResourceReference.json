@@ -2,10 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "ContainedResourceReference",
   "url": "https://smartforms.csiro.au/ig/StructureDefinition/ContainedResourceReference",
-  "version": "0.1.0",
   "name": "ContainedResourceReference",
   "title": "Contained Resource Reference",
-  "status": "active",
+  "status": "draft",
   "description": "This extension is intended to be used as a work around to a known bug whereby contained resources that are not referenced with the type, 'Reference' are removed before a resource is created in a HAPI FHIR server. This is problematic when referencing with the type, 'canonical'. The extension can be used to reference contained resources so they are retained when added to a HAPI FHIR server.",
   "fhirVersion": "4.0.1",
   "mapping": [

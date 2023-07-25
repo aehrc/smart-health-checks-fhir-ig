@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/Consent",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Consent",
+  "description": "Consent sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -343,11 +345,10 @@
     {
       "resourceType": "ValueSet",
       "id": "YesNoNA",
-      "status": "active",
+      "status": "draft",
       "name": "YesNoNA",
       "title": "Yes No NA",
       "description": "Concepts for Yes, No and Not applicable",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/YesNoNA",
       "experimental": false,
       "expansion": {
@@ -469,7 +470,6 @@
     }
   ],
   "name": "Consent",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Consent",
   "status": "draft",
   "experimental": false,
   "subjectType": [

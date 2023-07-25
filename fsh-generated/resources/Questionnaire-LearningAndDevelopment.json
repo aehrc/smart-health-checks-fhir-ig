@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/LearningAndDevelopment",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Learning And Development",
+  "description": "Learning And Development sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -417,7 +419,6 @@
     }
   ],
   "name": "LearningAndDevelopment",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Learning And Development",
   "status": "draft",
   "experimental": false,
   "subjectType": [

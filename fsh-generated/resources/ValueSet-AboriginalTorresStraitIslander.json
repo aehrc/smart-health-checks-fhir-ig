@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "AboriginalTorresStraitIslander",
   "id": "AboriginalTorresStraitIslander",
   "title": "Aboriginal and/or Torres Strait Islander",
   "description": "The Aboriginal and/or Torres Strait Islander value set includes the Australian Indigenous statuses for Indigenous people.",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/AboriginalTorresStraitIslander",
   "experimental": false,
   "expansion": {

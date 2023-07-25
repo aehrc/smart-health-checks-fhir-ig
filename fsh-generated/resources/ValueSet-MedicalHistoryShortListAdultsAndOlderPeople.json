@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "MedicalHistoryShortListAdultsAndOlderPeople",
   "id": "MedicalHistoryShortListAdultsAndOlderPeople",
   "title": "Medical History Short List for Adults and Older People",
   "description": "The Medical History Short List for Adults and Older People value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Adults and Older People.",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistoryShortListAdultsAndOlderPeople",
   "experimental": false,
   "expansion": {

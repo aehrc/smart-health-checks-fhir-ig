@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/FamilyHistory",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Family History",
+  "description": "Family History sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -159,7 +161,6 @@
     }
   ],
   "name": "FamilyHistory",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Family History",
   "status": "draft",
   "experimental": false,
   "subjectType": [

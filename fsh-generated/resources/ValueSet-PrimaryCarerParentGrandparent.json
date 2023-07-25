@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "PrimaryCarerParentGrandparent",
   "id": "PrimaryCarerParentGrandparent",
   "title": "Primary Carer Of Parent Or Grandparent",
   "description": "The Primary Carer Of Parent Or Grandparent value set includes values that can indicate whether a primary carer is one of the parents or a grandparent.",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/PrimaryCarerParentGrandparent",
   "experimental": false,
   "expansion": {

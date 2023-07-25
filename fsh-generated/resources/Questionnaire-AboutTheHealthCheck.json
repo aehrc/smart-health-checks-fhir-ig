@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/AboutTheHealthCheck",
+  "title": "Aboriginal and Torres Strait Islander Health Check - About The Health Check",
+  "description": "About The Health Check sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -86,11 +88,10 @@
     {
       "resourceType": "ValueSet",
       "id": "YesNoNA",
-      "status": "active",
+      "status": "draft",
       "name": "YesNoNA",
       "title": "Yes No NA",
       "description": "Concepts for Yes, No and Not applicable",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/YesNoNA",
       "experimental": false,
       "expansion": {
@@ -212,7 +213,6 @@
     }
   ],
   "name": "AboutTheHealthCheck",
-  "title": "Aboriginal and Torres Strait Islander Health Check - About The Health Check",
   "status": "draft",
   "experimental": false,
   "subjectType": [

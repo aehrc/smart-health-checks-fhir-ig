@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/PatientDetails",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Patient Details",
+  "description": "Patient Details sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -96,7 +98,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "%patient.extension('http://hl7.org.au/fhir/StructureDefinition/indigenous-status').value"
+                "expression": "%patient.extension.where(url='http://hl7.org.au/fhir/StructureDefinition/indigenous-status').value"
               }
             },
             {
@@ -1057,11 +1059,10 @@
     {
       "resourceType": "ValueSet",
       "id": "YesNoNA",
-      "status": "active",
+      "status": "draft",
       "name": "YesNoNA",
       "title": "Yes No NA",
       "description": "Concepts for Yes, No and Not applicable",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/YesNoNA",
       "experimental": false,
       "expansion": {
@@ -1138,11 +1139,10 @@
     {
       "resourceType": "ValueSet",
       "id": "AboriginalTorresStraitIslander",
-      "status": "active",
+      "status": "draft",
       "name": "AboriginalTorresStraitIslander",
       "title": "Aboriginal and/or Torres Strait Islander",
       "description": "The Aboriginal and/or Torres Strait Islander value set includes the Australian Indigenous statuses for Indigenous people.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/AboriginalTorresStraitIslander",
       "experimental": false,
       "expansion": {
@@ -1207,11 +1207,10 @@
     {
       "resourceType": "ValueSet",
       "id": "PrimaryCarerParentGrandparent",
-      "status": "active",
+      "status": "draft",
       "name": "PrimaryCarerParentGrandparent",
       "title": "Primary Carer Of Parent Or Grandparent",
       "description": "The Primary Carer Of Parent Or Grandparent value set includes values that can indicate whether a primary carer is one of the parents or a grandparent.",
-      "version": "0.1.0",
       "url": "https://smartforms.csiro.au/ig/ValueSet/PrimaryCarerParentGrandparent",
       "experimental": false,
       "expansion": {
@@ -1339,7 +1338,6 @@
     }
   ],
   "name": "PatientDetails",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Patient Details",
   "status": "draft",
   "experimental": false,
   "subjectType": [

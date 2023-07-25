@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/Mood",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Mood",
+  "description": "Mood sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -169,7 +171,6 @@
     }
   ],
   "name": "Mood",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Mood",
   "status": "draft",
   "experimental": false,
   "subjectType": [

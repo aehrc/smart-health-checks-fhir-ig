@@ -9,6 +9,8 @@
     ]
   },
   "url": "http://www.health.gov.au/assessments/mbs/715/ScreeningPrograms",
+  "title": "Aboriginal and Torres Strait Islander Health Check - Screening Programs",
+  "description": "Screening Programs sub-questionnaire for Aboriginal and Torres Strait Islander Health Check.",
   "item": [
     {
       "extension": [
@@ -235,7 +237,6 @@
     }
   ],
   "name": "ScreeningPrograms",
-  "title": "Aboriginal and Torres Strait Islander Health Check - Screening Programs",
   "status": "draft",
   "experimental": false,
   "subjectType": [

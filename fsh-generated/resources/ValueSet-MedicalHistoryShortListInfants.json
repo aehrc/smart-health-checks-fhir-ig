@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "MedicalHistoryShortListInfants",
   "id": "MedicalHistoryShortListInfants",
   "title": "Medical History Short List for Infants",
   "description": "The Medical History Short List for Infants value set includes values to represent conditions for use in a pick list for the MBS 715 Health Check for Infants.",
-  "version": "0.1.0",
   "url": "https://smartforms.csiro.au/ig/ValueSet/MedicalHistoryShortListInfants",
   "experimental": false,
   "expansion": {
