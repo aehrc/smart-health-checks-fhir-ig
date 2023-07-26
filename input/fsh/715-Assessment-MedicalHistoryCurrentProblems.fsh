@@ -119,6 +119,9 @@ Description: "Medical History sub-questionnaire for Aboriginal and Torres Strait
       * language = #text/fhirpath
       * expression = "%age <= 5"
     * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#check-box
+    * extension[sdc-questionnaire-initialExpression].valueExpression
+      * language = #text/fhirpath
+      * expression = "%Condition.entry.resource.code.select(coding.where(system='http://snomed.info/sct').first())"
     * linkId = "033db7b3-80da-43e2-9838-88f3d51e5913"
     * text = "Problems"
     * type = #choice
@@ -131,6 +134,9 @@ Description: "Medical History sub-questionnaire for Aboriginal and Torres Strait
       * language = #text/fhirpath
       * expression = "(%age > 5).intersect(%age <= 12)"
     * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#check-box
+    * extension[sdc-questionnaire-initialExpression].valueExpression
+      * language = #text/fhirpath
+      * expression = "%Condition.entry.resource.code.select(coding.where(system='http://snomed.info/sct').first())"
     * linkId = "384ab440-10ed-4ac1-89da-cd7d24f87a95"
     * text = "Problems"
     * type = #choice
@@ -143,6 +149,9 @@ Description: "Medical History sub-questionnaire for Aboriginal and Torres Strait
       * language = #text/fhirpath
       * expression = "(%age > 12).intersect(%age <= 24)"
     * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#check-box
+    * extension[sdc-questionnaire-initialExpression].valueExpression
+      * language = #text/fhirpath
+      * expression = "%Condition.entry.resource.code.select(coding.where(system='http://snomed.info/sct').first())"
     * linkId = "c24ae0d2-8932-4b87-9b7e-a644b5eb2874"
     * text = "Problems"
     * type = #choice
@@ -155,6 +164,9 @@ Description: "Medical History sub-questionnaire for Aboriginal and Torres Strait
       * language = #text/fhirpath
       * expression = "%age > 24"
     * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#check-box
+    * extension[sdc-questionnaire-initialExpression].valueExpression
+      * language = #text/fhirpath
+      * expression = "%Condition.entry.resource.code.select(coding.where(system='http://snomed.info/sct').first())"      
     * linkId = "bba27ef5-05c5-4e9c-bc9f-cf42091e99cb"
     * text = "Problems"
     * type = #choice

@@ -192,6 +192,13 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%Condition.entry.resource.code.select(coding.where(system='http://snomed.info/sct').first())"
+              }
             }
           ],
           "linkId": "033db7b3-80da-43e2-9838-88f3d51e5913",
@@ -218,6 +225,13 @@
                     "system": "http://hl7.org/fhir/questionnaire-item-control"
                   }
                 ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%Condition.entry.resource.code.select(coding.where(system='http://snomed.info/sct').first())"
               }
             }
           ],
@@ -246,6 +260,13 @@
                   }
                 ]
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%Condition.entry.resource.code.select(coding.where(system='http://snomed.info/sct').first())"
+              }
             }
           ],
           "linkId": "c24ae0d2-8932-4b87-9b7e-a644b5eb2874",
@@ -272,6 +293,13 @@
                     "system": "http://hl7.org/fhir/questionnaire-item-control"
                   }
                 ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%Condition.entry.resource.code.select(coding.where(system='http://snomed.info/sct').first())"
               }
             }
           ],

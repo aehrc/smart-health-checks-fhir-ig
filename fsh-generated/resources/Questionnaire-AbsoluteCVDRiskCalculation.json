@@ -146,7 +146,7 @@
           ],
           "linkId": "4b98f514-2f6a-41f3-ad9d-185abc68ae34",
           "text": "Systolic Blood Pressure",
-          "type": "decimal"
+          "type": "integer"
         },
         {
           "extension": [

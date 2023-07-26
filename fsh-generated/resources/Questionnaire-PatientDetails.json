@@ -477,7 +477,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/fhirpath",
-                    "expression": "%patient.contact.where(relationship.coding.code = 'C').name.where(use='usual').select(given.first() | family).join(' ')"
+                    "expression": "%patient.contact.where(relationship.coding.code = 'C').name.select(given.first() | family).join(' ')"
                   }
                 }
               ],

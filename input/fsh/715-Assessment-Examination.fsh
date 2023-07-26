@@ -266,7 +266,7 @@ Description: "Examination sub-questionnaire for Aboriginal and Torres Strait Isl
     * extension[http://hl7.org/fhir/StructureDefinition/questionnaire-unit].valueCoding = $UCUM#/min
     * linkId = "4eb7887a-fb87-4130-a246-20a5284f47fd"
     * text = "Heart rate"
-    * type = #decimal
+    * type = #integer
     * repeats = false
     * item[+]
       * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#unit

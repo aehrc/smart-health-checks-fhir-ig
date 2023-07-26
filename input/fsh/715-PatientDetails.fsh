@@ -266,7 +266,7 @@ Description: "Patient Details sub-questionnaire for Aboriginal and Torres Strait
     * item[+]
       * extension[sdc-questionnaire-initialExpression].valueExpression
         * language = #text/fhirpath
-        * expression = "%patient.contact.where(relationship.coding.code = 'C').name.where(use='usual').select(given.first() | family).join(' ')"
+        * expression = "%patient.contact.where(relationship.coding.code = 'C').name.select(given.first() | family).join(' ')"
       * linkId = "d7f2dd75-20c8-480f-8c22-71d604ebee8d"
       * text = "Name"
       * type = #string

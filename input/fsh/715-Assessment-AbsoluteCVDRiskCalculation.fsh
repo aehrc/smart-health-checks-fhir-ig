@@ -86,7 +86,7 @@ Description: "Absolute Cardiovascular Disease Risk Calculation sub-questionnaire
     * extension[http://hl7.org/fhir/StructureDefinition/questionnaire-unit].valueCoding = $UCUM#mm[Hg]
     * linkId = "4b98f514-2f6a-41f3-ad9d-185abc68ae34"
     * text = "Systolic Blood Pressure"
-    * type = #decimal
+    * type = #integer
     * item[+]
       * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#prompt
       * linkId = "1624394a-1777-4692-b304-03cd42de4c27"

@@ -572,7 +572,7 @@
           ],
           "linkId": "4eb7887a-fb87-4130-a246-20a5284f47fd",
           "text": "Heart rate",
-          "type": "decimal",
+          "type": "integer",
           "repeats": false
         },
         {
