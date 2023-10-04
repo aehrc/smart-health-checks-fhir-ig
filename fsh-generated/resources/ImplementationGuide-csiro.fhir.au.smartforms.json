@@ -323,6 +323,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/address-type"
+        },
+        "name": "AddressType",
+        "description": "The type of an address (physical / postal).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/australian-states-territories-2"
         },
         "name": "Australian States and Territories",

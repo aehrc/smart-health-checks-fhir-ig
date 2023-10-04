@@ -404,6 +404,16 @@
           ]
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext",
+              "valueExpression": {
+                "name": "AddressRepeat",
+                "language": "text/fhirpath",
+                "expression": "%patient.address.where(use='home')"
+              }
+            }
+          ],
           "item": [
             {
               "extension": [
@@ -411,7 +421,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/fhirpath",
-                    "expression": "%patient.address.extension('http://hl7.org.au/fhir/StructureDefinition/no-fixed-address').value"
+                    "expression": "%AddressRepeat.extension('http://hl7.org.au/fhir/StructureDefinition/no-fixed-address').value"
                   }
                 },
                 {
@@ -440,7 +450,35 @@
                       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                       "valueExpression": {
                         "language": "text/fhirpath",
-                        "expression": "%patient.address.select(line.join(', '))"
+                        "expression": "%AddressRepeat.type"
+                      }
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "code": "drop-down",
+                            "system": "http://hl7.org/fhir/questionnaire-item-control"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "linkId": "d45191b0-88aa-4966-9728-e00230a111ec",
+                  "definition": "http://hl7.org.au/fhir/StructureDefinition/au-address#Address.type",
+                  "text": "Postal or Physical?",
+                  "type": "choice",
+                  "answerValueSet": "#address-type",
+                  "repeats": false
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                      "valueExpression": {
+                        "language": "text/fhirpath",
+                        "expression": "%AddressRepeat.select(line.join(', '))"
                       }
                     }
                   ],
@@ -456,7 +494,7 @@
                       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                       "valueExpression": {
                         "language": "text/fhirpath",
-                        "expression": "%patient.address.city"
+                        "expression": "%AddressRepeat.where(use='home').city"
                       }
                     }
                   ],
@@ -472,7 +510,7 @@
                       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                       "valueExpression": {
                         "language": "text/fhirpath",
-                        "expression": "%patient.address.state"
+                        "expression": "%AddressRepeat.state"
                       }
                     },
                     {
@@ -500,7 +538,7 @@
                       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                       "valueExpression": {
                         "language": "text/fhirpath",
-                        "expression": "%patient.address.postalCode"
+                        "expression": "%AddressRepeat.postalCode"
                       }
                     },
                     {
@@ -520,9 +558,8 @@
                 }
               ],
               "linkId": "4e0dc185-f83e-4027-b7a8-ecb543d42c6d",
-              "text": "Address",
               "type": "group",
-              "repeats": true,
+              "repeats": false,
               "enableWhen": [
                 {
                   "question": "311d83bb-f22e-4f60-9b50-b6e38dd2059b",
@@ -535,7 +572,7 @@
           "linkId": "f1262ade-843c-4eba-a86d-51a9c97d134b",
           "text": "Home address",
           "type": "group",
-          "repeats": false
+          "repeats": true
         },
         {
           "extension": [
@@ -1441,6 +1478,102 @@
                 "code": "NA"
               }
             ]
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "address-type",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ]
+      },
+      "status": "active",
+      "name": "AddressType",
+      "title": "AddressType",
+      "description": "The type of an address (physical / postal).",
+      "url": "https://smartforms.csiro.au/ig/ValueSet/address-type",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+          "valueCode": "fhir"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+          "valueCode": "normative"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+          "valueCode": "4.0.0"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+          "valueInteger": 5
+        }
+      ],
+      "identifier": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:oid:2.16.840.1.113883.4.642.3.69"
+        }
+      ],
+      "version": "4.0.1",
+      "experimental": false,
+      "date": "2019-11-01T09:29:23+11:00",
+      "publisher": "HL7 (FHIR Project)",
+      "contact": [
+        {
+          "telecom": [
+            {
+              "system": "url",
+              "value": "http://hl7.org/fhir"
+            },
+            {
+              "system": "email",
+              "value": "fhir@lists.hl7.org"
+            }
+          ]
+        }
+      ],
+      "immutable": true,
+      "expansion": {
+        "identifier": "urn:uuid:25ebf384-ceec-4703-897a-d60a432742dc",
+        "timestamp": "2023-10-03T14:57:02+10:00",
+        "total": 3,
+        "parameter": [
+          {
+            "name": "version",
+            "valueUri": "http://hl7.org/fhir/address-type|5.0.0-ballot"
+          },
+          {
+            "name": "used-codesystem",
+            "valueUri": "http://hl7.org/fhir/address-type|5.0.0-ballot"
+          }
+        ],
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/address-type",
+            "code": "physical",
+            "display": "Physical"
+          },
+          {
+            "system": "http://hl7.org/fhir/address-type",
+            "code": "postal",
+            "display": "Postal"
+          },
+          {
+            "system": "http://hl7.org/fhir/address-type",
+            "code": "both",
+            "display": "Postal & Physical"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "http://hl7.org/fhir/address-type"
           }
         ]
       }

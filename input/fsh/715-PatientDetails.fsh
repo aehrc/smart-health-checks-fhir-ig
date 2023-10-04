@@ -11,6 +11,7 @@ Description: "Patient Details sub-questionnaire for Aboriginal and Torres Strait
 * contained[+] = YesNoNA
 * contained[+] = AboriginalTorresStraitIslander
 * contained[+] = PrimaryCarerParentGrandparent
+* contained[+] = address-type
 
 //assemble expectation
 * extension[+]
@@ -217,34 +218,48 @@ Description: "Patient Details sub-questionnaire for Aboriginal and Torres Strait
       * text = "Relationship to child"
       * type = #string
       * repeats = false
-  * item[+]
+  * item[+]    
+    * extension[sdc-questionnaire-itemPopulationContext].valueExpression
+      * name = "AddressRepeat"
+      * language = #text/fhirpath
+      * expression = "%patient.address.where(use='home')"
     * linkId = "f1262ade-843c-4eba-a86d-51a9c97d134b"
     * text = "Home address"
     * type = #group
-    * repeats = false
+    * repeats = true
     * item[+]
       * extension[sdc-questionnaire-initialExpression].valueExpression
         * language = #text/fhirpath
-        * expression = "%patient.address.extension('http://hl7.org.au/fhir/StructureDefinition/no-fixed-address').value"
+        * expression = "%AddressRepeat.extension('http://hl7.org.au/fhir/StructureDefinition/no-fixed-address').value"
       * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#check-box
       * linkId = "311d83bb-f22e-4f60-9b50-b6e38dd2059b"
       * definition = "http://hl7.org.au/fhir/StructureDefinition/au-address#Address.extension:noFixedAddress"
       * text = "No fixed address"
       * type = #boolean
       * repeats = false
-    * item[+]
+    * item[+]  
       * linkId = "4e0dc185-f83e-4027-b7a8-ecb543d42c6d"
-      * text = "Address"
       * type = #group
-      * repeats = true      
+      * repeats = false    
       * enableWhen[+]
         * question = "311d83bb-f22e-4f60-9b50-b6e38dd2059b"
         * operator = #!=
-        * answerBoolean = true
+        * answerBoolean = true        
       * item[+]
         * extension[sdc-questionnaire-initialExpression].valueExpression
           * language = #text/fhirpath
-          * expression = "%patient.address.select(line.join(', '))"
+          * expression = "%AddressRepeat.type"
+        * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#drop-down
+        * linkId = "d45191b0-88aa-4966-9728-e00230a111ec"
+        * definition = "http://hl7.org.au/fhir/StructureDefinition/au-address#Address.type"
+        * text = "Postal or Physical?"
+        * type = #choice
+        * answerValueSet = "#address-type"
+        * repeats = false
+      * item[+]
+        * extension[sdc-questionnaire-initialExpression].valueExpression
+          * language = #text/fhirpath
+          * expression = "%AddressRepeat.select(line.join(', '))"
         * linkId = "2fee2d51-7828-4178-b8c1-35edd32ba338"
         * definition = "http://hl7.org.au/fhir/StructureDefinition/au-address#Address.line"
         * text = "Street address"
@@ -253,7 +268,7 @@ Description: "Patient Details sub-questionnaire for Aboriginal and Torres Strait
       * item[+]
         * extension[sdc-questionnaire-initialExpression].valueExpression
           * language = #text/fhirpath
-          * expression = "%patient.address.city"
+          * expression = "%AddressRepeat.where(use='home').city"
         * linkId = "ddb65ed1-f4b2-4730-af2a-2f98bc73c76f"
         * definition = "http://hl7.org.au/fhir/StructureDefinition/au-address#Address.city"
         * text = "City"
@@ -262,7 +277,7 @@ Description: "Patient Details sub-questionnaire for Aboriginal and Torres Strait
       * item[+]
         * extension[sdc-questionnaire-initialExpression].valueExpression
           * language = #text/fhirpath
-          * expression = "%patient.address.state"
+          * expression = "%AddressRepeat.state"
         * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#drop-down
         * linkId = "d9a1236c-8d6e-4f20-a12a-9d5de5a1d0f6"
         * definition = "http://hl7.org.au/fhir/StructureDefinition/au-address#Address.state"
@@ -273,7 +288,7 @@ Description: "Patient Details sub-questionnaire for Aboriginal and Torres Strait
       * item[+]
         * extension[sdc-questionnaire-initialExpression].valueExpression
           * language = #text/fhirpath
-          * expression = "%patient.address.postalCode"
+          * expression = "%AddressRepeat.postalCode"
         * extension[http://hl7.org/fhir/StructureDefinition/regex].valueString = "matches('^[0-9]{4}$')"
         * extension[http://hl7.org/fhir/StructureDefinition/entryFormat].valueString = "####"
         * linkId = "3f61a1ea-1c74-4f52-8519-432ce861a74f"
