@@ -34,6 +34,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - Guidance
   - [Reference Implementation](reference-implementation.html): This page describes software components and high level solution architecture of a Smart Forms reference implementation.
+  - [Clinical System Integration](clinical-system-integration.html): This page describes an overview of integrating a GP Practice Management System with the Smart Forms Services for use with the Aboriginal and Torres Strait Islander Health Check assessment.
 - FHIR Artefacts: These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Artefact Summary](artifacts.html): This page lists all of the FHIR artefacts defined in this guide.
   - [Questionnaires](questionnaires.html): This page lists all of the Questionnaire resources defined in this guide.

@@ -130,6 +130,7 @@ menu:
 #      Must Support: must-support.html
   Guidance: #guidance.html
       Reference Implementation: reference-implementation.html
+      Clinical System Inegration: clinical-system-integration.html
 #      General Guidance: general-guidance.html
   FHIR Artefacts: #artifact.html
       Artefact Summary: artifacts.html
