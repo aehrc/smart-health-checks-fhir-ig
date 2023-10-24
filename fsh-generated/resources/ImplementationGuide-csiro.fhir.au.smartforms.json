@@ -54,6 +54,7 @@
         "reference": {
           "reference": "Questionnaire/AboriginalTorresStraitIslanderHealthCheck"
         },
+        "description": "Aboriginal and Torres Strait Islander Health Check assessment form.",
         "exampleBoolean": false,
         "name": "Aboriginal and Torres Strait Islander Health Check"
       },
