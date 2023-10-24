@@ -693,42 +693,6 @@
       {
         "code": "special-url",
         "value": "http://www.health.gov.au/assessments/mbs/715/PatientDetails"
-      },
-      {
-        "code": "special-url",
-        "value": "http://hl7.org/fhir/questionnaire-item-control"
-      },
-      {
-        "code": "special-url",
-        "value": "http://hl7.org/fhir/ValueSet/questionnaire-item-control"
-      },
-      {
-        "code": "special-url",
-        "value": "https://healthterminologies.gov.au/fhir/ValueSet/biological-sex-1"
-      },
-      {
-        "code": "special-url",
-        "value": "http://hl7.org/fhir/ValueSet/condition-clinical"
-      },
-      {
-        "code": "special-url",
-        "value": "https://healthterminologies.gov.au/fhir/ValueSet/gender-identity-response-1"
-      },
-      {
-        "code": "special-url",
-        "value": "http://terminology.hl7.org/ValueSet/pronouns"
-      },
-      {
-        "code": "special-url",
-        "value": "https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2"
-      },
-      {
-        "code": "apply-version",
-        "value": "false"
-      },
-      {
-        "code": "default-version",
-        "value": "true"
       }
     ]
   }

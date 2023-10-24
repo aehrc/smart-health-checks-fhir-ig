@@ -96,15 +96,6 @@ parameters:
     - 'http://www.health.gov.au/assessments/mbs/715/FinalisingHealthCheck'
     - 'http://www.health.gov.au/assessments/mbs/715/HealthPrioritiesSummary'
     - 'http://www.health.gov.au/assessments/mbs/715/PatientDetails'
-    - 'http://hl7.org/fhir/questionnaire-item-control'
-    - 'http://hl7.org/fhir/ValueSet/questionnaire-item-control'
-    - 'https://healthterminologies.gov.au/fhir/ValueSet/biological-sex-1'
-    - 'http://hl7.org/fhir/ValueSet/condition-clinical'
-    - 'https://healthterminologies.gov.au/fhir/ValueSet/gender-identity-response-1'
-    - 'http://terminology.hl7.org/ValueSet/pronouns'
-    - 'https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2'
-  apply-version: false
-  default-version: true
   
     
 

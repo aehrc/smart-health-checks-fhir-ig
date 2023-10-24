@@ -226,7 +226,7 @@ Description: "Medical History sub-questionnaire for Aboriginal and Torres Strait
       * linkId = "88bcfad7-386b-4d87-b34b-2e50482e4d2c"
       * text = "Clinical Status"
       * type = #choice
-      * answerValueSet = "http://hl7.org/fhir/ValueSet/condition-clinical"
+      * answerValueSet = "#condition-clinical"
     * item[+]
       * extension[sdc-questionnaire-initialExpression].valueExpression
         * language = #text/fhirpath

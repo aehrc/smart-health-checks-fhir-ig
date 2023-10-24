@@ -6,6 +6,7 @@
         "lastUpdated": "2023-10-16T04:37:24.774+00:00",
         "source": "#7ad8y3Tud75mQnKy",
         "profile": [
+            "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-modular",
             "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp",
             "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-render"
         ]

@@ -5,7 +5,7 @@
   "id": "australian-states-territories-2",
   "title": "Australian States and Territories",
   "description": "The Australian States and Territories value set includes values that represent the Australian states and territories.",
-  "url": "https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2",
+  "url": "https://smartforms.csiro.au/ig/ValueSet/australian-states-territories-2",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset",

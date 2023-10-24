@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "PersonalPronouns",
   "id": "pronouns",
   "title": "Personal Pronouns",
@@ -22,7 +22,7 @@
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 1
+      "valueInteger": 2
     }
   ],
   "identifier": [
@@ -31,33 +31,65 @@
       "value": "urn:oid:2.16.840.1.113883.4.642.3.3290"
     }
   ],
-  "version": "1.0.0",
+  "version": "4.1.1",
   "experimental": false,
-  "date": "2023-07-17T22:16:15-06:00",
-  "publisher": "FHIR Project team",
+  "date": "2023-03-26T09:00:24+11:00",
+  "publisher": "HL7 Australia",
   "contact": [
     {
+      "name": "HL7 Australia Patient Administration Working Group",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.org/fhir"
+          "value": "http://confluence.hl7australia.com/display/PA",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Australia Orders and Observations Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://confluence.hl7australia.com/display/OO",
+          "use": "work"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Australia Medications Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://confluence.hl7australia.com/display/MED",
+          "use": "work"
         }
       ]
     }
   ],
-  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "AU",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.\n\nThis value set is an R4 (4.0.1) conversion of the canonical value set published in the R5 [FHIR Extensions Pack](http://hl7.org/fhir/extensions/ValueSet-pronouns.html).",
   "expansion": {
-    "identifier": "urn:uuid:220b830c-6a1b-43e7-81e0-ccf92485fcdf",
-    "timestamp": "2023-10-17T10:42:37+10:00",
+    "identifier": "urn:uuid:cc2618eb-542e-48a4-b2af-c55fd0548906",
+    "timestamp": "2023-08-29T10:16:17+10:00",
     "total": 3,
     "parameter": [
       {
         "name": "version",
-        "valueUri": "http://loinc.org|2.76"
+        "valueUri": "http://loinc.org|2.75"
       },
       {
         "name": "used-codesystem",
-        "valueUri": "http://loinc.org|2.76"
+        "valueUri": "http://loinc.org|2.75"
       }
     ],
     "contains": [
