@@ -2,9 +2,9 @@
     "resourceType": "Questionnaire",
     "id": "AboriginalTorresStraitIslanderHealthCheck",
     "meta": {
-        "versionId": "28",
-        "lastUpdated": "2023-10-17T04:50:46.977+00:00",
-        "source": "#XNEQY8IavbGA4Hja",
+        "versionId": "25",
+        "lastUpdated": "2023-10-16T04:37:24.774+00:00",
+        "source": "#7ad8y3Tud75mQnKy",
         "profile": [
             "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp",
             "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-render"
@@ -900,7 +900,6 @@
                 }
             ],
             "description": "Preferred value set for Condition Clinical Status.",
-            "copyright": "Copyright © 2011+ HL7. Creative Commons 'No Rights Reserved' (CC0)",
             "compose": {
                 "include": [
                     {
@@ -1228,12 +1227,6 @@
             "url": "https://smartforms.csiro.au/ig/StructureDefinition/ContainedResourceReference",
             "valueReference": {
                 "reference": "#PrimaryCarerParentGrandparent"
-            }
-        },
-        {
-            "url": "https://smartforms.csiro.au/ig/StructureDefinition/ContainedResourceReference",
-            "valueReference": {
-                "reference": "#pronouns"
             }
         },
         {
@@ -4470,7 +4463,7 @@
                                     "linkId": "88bcfad7-386b-4d87-b34b-2e50482e4d2c",
                                     "text": "Clinical Status",
                                     "type": "choice",
-                                    "answerValueSet": "http://hl7.org/fhir/ValueSet/condition-clinical"
+                                    "answerValueSet": "#condition-clinical"
                                 },
                                 {
                                     "extension": [
@@ -8469,7 +8462,7 @@
                         },
                         {
                             "linkId": "dfbf13b5-e9e1-4f2f-83fc-1b3b9e50c921",
-                            "text": "This is based on material from the The State of Queensland, Red flags early identification guide (for children aged birth to five years). 2nd edn. South Brisbane, Qld: Child Development Program, Queensland Health, 2016. Available at www.childrens.health.qld.gov.au/wp-content/uploads/PDF/red-flags-a3.pdf [Accessed 2 December 2019]. © Developed by the Child Development Program in conjunction with Brisbane North Primary Health Network. Updated: July 2016.",
+                            "text": "This is based on material from the The State of Queensland, Red flags early identification guide (for children aged birth to five years). 2nd edn. South Brisbane, Qld: Child Development Program, Queensland Health, 2016. Available at www.childrens.health.qld.gov.au/wp-content/uploads/PDF/red-flags-a3.pdf [Accessed 2 December 2019]. Â© Developed by the Child Development Program in conjunction with Brisbane North Primary Health Network. Updated: July 2016.",
                             "type": "display"
                         },
                         {
