@@ -18,19 +18,14 @@ See the [FHIR terminology section]({{site.data.fhir.path}}terminologies-systems.
 - [Aboriginal and/or Torres Strait Islander](ValueSet-AboriginalTorresStraitIslander.html)
 - [Condition Clinical Status Codes](ValueSet-condition-clinical.html)
 - [Medical History](ValueSet-MedicalHistory.html)
-- [Medical History Short List for Infants](ValueSet-MedicalHistoryShortListInfants.html)
-- [Medical History Short List for Primary School Children](ValueSet-MedicalHistoryShortListPrimarySchool.html)
 - [Medical History Short List for Adolescents](ValueSet-MedicalHistoryShortListAdolescents.html)
 - [Medical History Short List for Adults and Older People](ValueSet-MedicalHistoryShortListAdultsAndOlderPeople.html)
+- [Medical History Short List for Infants](ValueSet-MedicalHistoryShortListInfants.html)
+- [Medical History Short List for Primary School Children](ValueSet-MedicalHistoryShortListPrimarySchool.html)
 - [Primary Carer Of Parent Or Grandparent](ValueSet-PrimaryCarerParentGrandparent.html)
-- [Yes/No](ValueSet-YesNo.html)
-- [Yes/No/NA](ValueSet-YesNoNA.html)
-- [Yes/No/Not Asked/Asked But Declined](ValueSet-YesNoNotAskedDeclined.html)
+- [Yes No](ValueSet-YesNo.html)
+- [Yes No NA](ValueSet-YesNoNA.html)
 - [Australian States and Territories](ValueSet-australian-states-territories-2.html)
-- [Personal Pronouns](ValueSet-pronouns.html)
-- [Gender Identity Response](ValueSet-gender-identity-response-1.html)
-- [Biological Sex](ValueSet-biological-sex-1.html)
-
 
 ### Code systems
 
