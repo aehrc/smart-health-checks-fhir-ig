@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "csiro.fhir.au.smartforms",
   "url": "https://smartforms.csiro.au/ig/ImplementationGuide/csiro.fhir.au.smartforms",
-  "version": "0.1.0",
+  "version": "0.1.0-draft",
   "name": "SmartForms",
   "title": "Smart Forms",
   "status": "draft",
@@ -521,7 +521,7 @@
       },
       {
         "code": "releaselabel",
-        "value": "ci-build"
+        "value": "draft"
       },
       {
         "code": "path-expansion-params",
