@@ -1,0 +1,378 @@
+[
+  {
+    "outputFile": "CodeSystem-QuestionnaireItemControlExtended.json",
+    "fshName": "QuestionnaireItemControlExtended",
+    "fshType": "CodeSystem",
+    "fshFile": "terminology.fsh",
+    "startLine": 7,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Questionnaire-AboutTheHealthCheck.json",
+    "fshName": "AboutTheHealthCheck",
+    "fshType": "Instance",
+    "fshFile": "715-AboutTheHealthCheck.fsh",
+    "startLine": 5,
+    "endLine": 163
+  },
+  {
+    "outputFile": "Questionnaire-AbsoluteCVDRiskCalculation.json",
+    "fshName": "AbsoluteCVDRiskCalculation",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-AbsoluteCVDRiskCalculation.fsh",
+    "startLine": 5,
+    "endLine": 415
+  },
+  {
+    "outputFile": "Questionnaire-AllergiesAdverseReactions.json",
+    "fshName": "AllergiesAdverseReactions",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-AllergiesAdverseReactions.fsh",
+    "startLine": 5,
+    "endLine": 103
+  },
+  {
+    "outputFile": "Questionnaire-AssemblyInstructions.json",
+    "fshName": "AssemblyInstructions",
+    "fshType": "Instance",
+    "fshFile": "715-AssemblyInstructions.fsh",
+    "startLine": 5,
+    "endLine": 577
+  },
+  {
+    "outputFile": "Questionnaire-ChronicDiseaseAgeing.json",
+    "fshName": "ChronicDiseaseAgeing",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-ChronicDiseaseAgeing.fsh",
+    "startLine": 5,
+    "endLine": 120
+  },
+  {
+    "outputFile": "Questionnaire-Consent.json",
+    "fshName": "Consent",
+    "fshType": "Instance",
+    "fshFile": "715-Consent.fsh",
+    "startLine": 7,
+    "endLine": 216
+  },
+  {
+    "outputFile": "Questionnaire-CurrentPriorities.json",
+    "fshName": "CurrentPriorities",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-CurrentPriorities.fsh",
+    "startLine": 5,
+    "endLine": 182
+  },
+  {
+    "outputFile": "Questionnaire-EarHealthAndHearing.json",
+    "fshName": "EarHealthAndHearing",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-EarHealthAndHearing.fsh",
+    "startLine": 5,
+    "endLine": 321
+  },
+  {
+    "outputFile": "Questionnaire-Examination.json",
+    "fshName": "Examination",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-Examination.fsh",
+    "startLine": 5,
+    "endLine": 504
+  },
+  {
+    "outputFile": "Questionnaire-EyeHealth.json",
+    "fshName": "EyeHealth",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-EyeHealth.fsh",
+    "startLine": 5,
+    "endLine": 228
+  },
+  {
+    "outputFile": "Questionnaire-FamilyHistory.json",
+    "fshName": "FamilyHistory",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-FamilyHistory.fsh",
+    "startLine": 5,
+    "endLine": 126
+  },
+  {
+    "outputFile": "Questionnaire-FinalisingHealthCheck.json",
+    "fshName": "FinalisingHealthCheck",
+    "fshType": "Instance",
+    "fshFile": "715-FinalisingHealthCheck.fsh",
+    "startLine": 5,
+    "endLine": 448
+  },
+  {
+    "outputFile": "Questionnaire-Gambling.json",
+    "fshName": "Gambling",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-Gambling.fsh",
+    "startLine": 5,
+    "endLine": 122
+  },
+  {
+    "outputFile": "Questionnaire-HealthPrioritiesSummary.json",
+    "fshName": "HealthPrioritiesSummary",
+    "fshType": "Instance",
+    "fshFile": "715-HealthPrioritiesSummary.fsh",
+    "startLine": 5,
+    "endLine": 568
+  },
+  {
+    "outputFile": "Questionnaire-HealthyEating.json",
+    "fshName": "HealthyEating",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-HealthyEating.fsh",
+    "startLine": 5,
+    "endLine": 285
+  },
+  {
+    "outputFile": "Questionnaire-HomeAndFamily.json",
+    "fshName": "HomeAndFamily",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-HomeAndFamily.fsh",
+    "startLine": 5,
+    "endLine": 155
+  },
+  {
+    "outputFile": "Questionnaire-Immunisation.json",
+    "fshName": "Immunisation",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-Immunisation.fsh",
+    "startLine": 5,
+    "endLine": 163
+  },
+  {
+    "outputFile": "Questionnaire-Investigations.json",
+    "fshName": "Investigations",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-Investigations.fsh",
+    "startLine": 5,
+    "endLine": 133
+  },
+  {
+    "outputFile": "Questionnaire-LearningAndDevelopment.json",
+    "fshName": "LearningAndDevelopment",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-LearningAndDevelopment.fsh",
+    "startLine": 5,
+    "endLine": 224
+  },
+  {
+    "outputFile": "Questionnaire-LearningAndWork.json",
+    "fshName": "LearningAndWork",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-LearningAndWork.fsh",
+    "startLine": 5,
+    "endLine": 227
+  },
+  {
+    "outputFile": "Questionnaire-MedicalHistoryCurrentProblems.json",
+    "fshName": "MedicalHistoryCurrentProblems",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-MedicalHistoryCurrentProblems.fsh",
+    "startLine": 5,
+    "endLine": 300
+  },
+  {
+    "outputFile": "Questionnaire-MemoryAndThinking.json",
+    "fshName": "MemoryAndThinking",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-MemoryAndThinking.fsh",
+    "startLine": 5,
+    "endLine": 155
+  },
+  {
+    "outputFile": "Questionnaire-Mood.json",
+    "fshName": "Mood",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-Mood.fsh",
+    "startLine": 5,
+    "endLine": 130
+  },
+  {
+    "outputFile": "Questionnaire-OralAndDentalHealth.json",
+    "fshName": "OralAndDentalHealth",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-OralAndDentalHealth.fsh",
+    "startLine": 5,
+    "endLine": 177
+  },
+  {
+    "outputFile": "Questionnaire-PatientDetails.json",
+    "fshName": "PatientDetails",
+    "fshType": "Instance",
+    "fshFile": "715-PatientDetails.fsh",
+    "startLine": 5,
+    "endLine": 709
+  },
+  {
+    "outputFile": "Questionnaire-PhysicalActivityAndScreenTime.json",
+    "fshName": "PhysicalActivityAndScreenTime",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-PhysicalActivityAndScreenTime.fsh",
+    "startLine": 5,
+    "endLine": 276
+  },
+  {
+    "outputFile": "Questionnaire-RedFlagsEarlyIdentificationGuide.json",
+    "fshName": "RedFlagsEarlyIdentificationGuide",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-RedFlagsEarlyIdentificationGuide.fsh",
+    "startLine": 5,
+    "endLine": 518
+  },
+  {
+    "outputFile": "Questionnaire-RegularMedications.json",
+    "fshName": "RegularMedications",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-RegularMedications.fsh",
+    "startLine": 5,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Questionnaire-ScreeningPrograms.json",
+    "fshName": "ScreeningPrograms",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-ScreeningPrograms.fsh",
+    "startLine": 5,
+    "endLine": 187
+  },
+  {
+    "outputFile": "Questionnaire-SexualHealth.json",
+    "fshName": "SexualHealth",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-SexualHealth.fsh",
+    "startLine": 5,
+    "endLine": 370
+  },
+  {
+    "outputFile": "Questionnaire-Skin.json",
+    "fshName": "Skin",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-Skin.fsh",
+    "startLine": 5,
+    "endLine": 168
+  },
+  {
+    "outputFile": "Questionnaire-SocialAndEmotionalWellbeing.json",
+    "fshName": "SocialAndEmotionalWellbeing",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-SocialAndEmotionalWellbeing.fsh",
+    "startLine": 5,
+    "endLine": 142
+  },
+  {
+    "outputFile": "Questionnaire-SocialHistoryChild.json",
+    "fshName": "SocialHistoryChild",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-SocialHistoryChild.fsh",
+    "startLine": 5,
+    "endLine": 146
+  },
+  {
+    "outputFile": "Questionnaire-SubstanceUse.json",
+    "fshName": "SubstanceUse",
+    "fshType": "Instance",
+    "fshFile": "715-Assessment-SubstanceUse.fsh",
+    "startLine": 5,
+    "endLine": 209
+  },
+  {
+    "outputFile": "StructureDefinition-ContainedResourceReference.json",
+    "fshName": "ContainedResourceReference",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-AboriginalTorresStraitIslander.json",
+    "fshName": "AboriginalTorresStraitIslander",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 102,
+    "endLine": 128
+  },
+  {
+    "outputFile": "ValueSet-MedicalHistory.json",
+    "fshName": "MedicalHistory",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 172,
+    "endLine": 178
+  },
+  {
+    "outputFile": "ValueSet-PrimaryCarerParentGrandparent.json",
+    "fshName": "PrimaryCarerParentGrandparent",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 133,
+    "endLine": 169
+  },
+  {
+    "outputFile": "ValueSet-YesNo.json",
+    "fshName": "YesNo",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 79,
+    "endLine": 98
+  },
+  {
+    "outputFile": "ValueSet-YesNoNA.json",
+    "fshName": "YesNoNA",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 53,
+    "endLine": 76
+  },
+  {
+    "outputFile": "ValueSet-YesNoNotAskedDeclined.json",
+    "fshName": "YesNoNotAskedDeclined",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 16,
+    "endLine": 51
+  },
+  {
+    "outputFile": "ValueSet-australian-states-territories-2.json",
+    "fshName": "AustralianStatesAndTerritories",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 497,
+    "endLine": 559
+  },
+  {
+    "outputFile": "ValueSet-biological-sex-1.json",
+    "fshName": "BiologicalSex",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 658,
+    "endLine": 695
+  },
+  {
+    "outputFile": "ValueSet-condition-clinical.json",
+    "fshName": "ConditionClinicalStatusCodes",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 443,
+    "endLine": 492
+  },
+  {
+    "outputFile": "ValueSet-gender-identity-response-1.json",
+    "fshName": "GenderIdentityResponse",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 562,
+    "endLine": 614
+  },
+  {
+    "outputFile": "ValueSet-pronouns.json",
+    "fshName": "PersonalPronouns",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 616,
+    "endLine": 656
+  }
+]
