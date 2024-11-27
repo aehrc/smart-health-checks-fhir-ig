@@ -845,18 +845,5 @@ Description: "The Smoking Quit Status value set includes values that can indicat
 * ^experimental = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/valueset-supplement"
 * ^extension[=].valueCanonical = "https://smartforms.csiro.au/ig/CodeSystem/HealthChecksSCTSupplement"
-* ^expansion.identifier = "urn:uuid:86b4329d-aca5-4e54-9b5e-67296c7ce9db"
-* ^expansion.timestamp = "2024-04-08T12:56:59+10:00"
-* ^expansion.total = 2
-* ^expansion.parameter[0].name = "version"
-* ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20240331"
-* ^expansion.parameter[+].name = "used-codesystem"
-* ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20240331"
-* ^expansion.contains[0].system = "http://snomed.info/sct"
-* ^expansion.contains[=].code = #48031000119106
-* ^expansion.contains[=].display = "Quit >12 months"
-* ^expansion.contains[+].system = "http://snomed.info/sct"
-* ^expansion.contains[=].code = #735128000
-* ^expansion.contains[=].display = "Quit <12 months"
 * $SCT#48031000119106 "Quit >12 months"
 * $SCT#735128000 "Quit <12 months"

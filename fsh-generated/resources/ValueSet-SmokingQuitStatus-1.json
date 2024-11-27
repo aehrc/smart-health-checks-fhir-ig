@@ -13,33 +13,6 @@
       "valueCanonical": "https://smartforms.csiro.au/ig/CodeSystem/HealthChecksSCTSupplement"
     }
   ],
-  "expansion": {
-    "identifier": "urn:uuid:86b4329d-aca5-4e54-9b5e-67296c7ce9db",
-    "timestamp": "2024-04-08T12:56:59+10:00",
-    "total": 2,
-    "parameter": [
-      {
-        "name": "version",
-        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20240331"
-      },
-      {
-        "name": "used-codesystem",
-        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20240331"
-      }
-    ],
-    "contains": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "48031000119106",
-        "display": "Quit >12 months"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "735128000",
-        "display": "Quit <12 months"
-      }
-    ]
-  },
   "compose": {
     "include": [
       {
