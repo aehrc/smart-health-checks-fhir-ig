@@ -1091,6 +1091,101 @@
         },
         {
             "resourceType": "ValueSet",
+            "id": "TobaccoUseStatus-1",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/valueset-supplement",
+                    "valueCanonical": "https://smartforms.csiro.au/ig/CodeSystem/HealthChecksSCTSupplement"
+                }
+            ],
+            "url": "https://smartforms.csiro.au/ig/ValueSet/TobaccoUseStatus-1",
+            "name": "TobaccoUseStatus",
+            "title": "Tobacco Use Status",
+            "status": "draft",
+            "experimental": false,
+            "description": "The Tobacco Use Status value set includes values that may be used to represent an individual's current tobacco use and exposure status.",
+            "compose": {
+                "include": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "concept": [
+                            {
+                                "code": "266919005",
+                                "display": "Never smoked"
+                            },
+                            {
+                                "code": "77176002",
+                                "display": "Current smoker"
+                            },
+                            {
+                                "code": "8517006",
+                                "display": "Ex-smoker"
+                            },
+                            {
+                                "code": "16090371000119103",
+                                "display": "Exposure to second hand tobacco smoke"
+                            },
+                            {
+                                "code": "394872000",
+                                "display": "Wants to quit"
+                            },
+                            {
+                                "code": "713914004",
+                                "display": "Other tobacco use"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "expansion": {
+                "identifier": "urn:uuid:577a997d-bacd-499f-bae4-aa6efdcca45e",
+                "timestamp": "2024-11-29T10:37:34+10:00",
+                "parameter": [
+                    {
+                        "name": "version",
+                        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20241130"
+                    },
+                    {
+                        "name": "used-codesystem",
+                        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20241130"
+                    }
+                ],
+                "contains": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "266919005",
+                        "display": "Never smoked"
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "77176002",
+                        "display": "Current smoker"
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "8517006",
+                        "display": "Ex-smoker"
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "16090371000119103",
+                        "display": "Exposure to second hand tobacco smoke"
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "394872000",
+                        "display": "Wants to quit"
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "713914004",
+                        "display": "Other tobacco use"
+                    }
+                ]
+            }
+        },
+        {
+            "resourceType": "ValueSet",
             "id": "YesNoNotAskedDeclined",
             "url": "https://smartforms.csiro.au/ig/ValueSet/YesNoNotAskedDeclined",
             "name": "YesNoNotAskedDeclined",
@@ -1355,6 +1450,12 @@
         {
             "url": "https://smartforms.csiro.au/ig/StructureDefinition/ContainedResourceReference",
             "valueReference": {
+                "reference": "#TobaccoUseStatus-1"
+            }
+        },
+        {
+            "url": "https://smartforms.csiro.au/ig/StructureDefinition/ContainedResourceReference",
+            "valueReference": {
                 "reference": "#CervicalScreeningStatus-1"
             }
         },
@@ -1420,139 +1521,139 @@
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/AboutTheHealthCheck|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/AboutTheHealthCheck|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Consent|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Consent|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/PatientDetails|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/PatientDetails|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/CurrentPriorities|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/CurrentPriorities|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/MedicalHistoryCurrentProblems|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/MedicalHistoryCurrentProblems|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/RegularMedications|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/RegularMedications|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/AllergiesAdverseReactions|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/AllergiesAdverseReactions|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/FamilyHistory|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/FamilyHistory|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/SocialAndEmotionalWellbeing|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/SocialAndEmotionalWellbeing|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/SocialHistoryChild|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/SocialHistoryChild|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/HomeAndFamily|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/HomeAndFamily|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/LearningAndDevelopment|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/LearningAndDevelopment|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/LearningAndWork|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/LearningAndWork|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Mood|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Mood|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/MemoryAndThinking|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/MemoryAndThinking|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/ChronicDiseaseAgeing|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/ChronicDiseaseAgeing|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/ScreeningPrograms|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/ScreeningPrograms|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/HealthyEating|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/HealthyEating|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/PhysicalActivityAndScreenTime|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/PhysicalActivityAndScreenTime|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/RedFlagsEarlyIdentificationGuide|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/RedFlagsEarlyIdentificationGuide|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/SubstanceUse|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/SubstanceUse|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Gambling|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Gambling|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/SexualHealth|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/SexualHealth|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/EyeHealth|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/EyeHealth|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/EarHealthAndHearing|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/EarHealthAndHearing|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/OralAndDentalHealth|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/OralAndDentalHealth|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Skin|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Skin|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Immunisation|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Immunisation|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Examination|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Examination|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/AbsoluteCVDRiskCalculation|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/AbsoluteCVDRiskCalculation|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Investigations|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/Investigations|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/HealthPrioritiesSummary|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/HealthPrioritiesSummary|0.2.0"
         },
         {
             "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembledFrom",
-            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/FinalisingHealthCheck|0.1.0"
+            "valueCanonical": "http://www.health.gov.au/assessments/mbs/715/FinalisingHealthCheck|0.2.0"
         }
     ],
     "url": "http://www.health.gov.au/assessments/mbs/715",
-    "version": "0.1.0-assembled",
+    "version": "0.2.0-assembled",
     "name": "AboriginalTorresStraitIslanderHealthCheck",
     "title": "Aboriginal and Torres Strait Islander Health Check",
     "status": "draft",
@@ -9946,42 +10047,7 @@
                                     "text": "Smoking status",
                                     "type": "choice",
                                     "repeats": false,
-                                    "answerOption": [
-                                        {
-                                            "valueCoding": {
-                                                "system": "http://snomed.info/sct",
-                                                "code": "266919005",
-                                                "display": "Lifetime non-smoker"
-                                            }
-                                        },
-                                        {
-                                            "valueCoding": {
-                                                "system": "http://snomed.info/sct",
-                                                "code": "77176002",
-                                                "display": "Current smoker"
-                                            }
-                                        },
-                                        {
-                                            "valueCoding": {
-                                                "system": "http://snomed.info/sct",
-                                                "code": "8517006",
-                                                "display": "Ex-smoker"
-                                            }
-                                        },
-                                        {
-                                            "valueCoding": {
-                                                "system": "http://snomed.info/sct",
-                                                "code": "16090371000119103",
-                                                "display": "Exposure to second hand tobacco smoke"
-                                            }
-                                        },
-                                        {
-                                            "valueString": "Wants to quit"
-                                        },
-                                        {
-                                            "valueString": "Other tobacco use"
-                                        }
-                                    ]
+                                    "answerValueSet": "#TobaccoUseStatus-1"
                                 },
                                 {
                                     "extension": [
@@ -10037,7 +10103,10 @@
                                         {
                                             "question": "b639a3a8-f476-4cc8-b5c7-f5d2abb23511",
                                             "operator": "=",
-                                            "answerString": "Wants to quit"
+                                            "answerCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "394872000"
+                                            }
                                         }
                                     ],
                                     "enableBehavior": "any",
@@ -10067,7 +10136,10 @@
                                         {
                                             "question": "b639a3a8-f476-4cc8-b5c7-f5d2abb23511",
                                             "operator": "=",
-                                            "answerString": "Wants to quit"
+                                            "answerCoding": {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "394872000"
+                                            }
                                         }
                                     ],
                                     "enableBehavior": "any"
