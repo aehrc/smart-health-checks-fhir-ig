@@ -50,16 +50,9 @@
     "resource": [
       {
         "reference": {
-          "reference": "QuestionnaireResponse/480"
+          "reference": "QuestionnaireResponse/489"
         },
-        "name": "480",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "QuestionnaireResponse/482"
-        },
-        "name": "482",
+        "name": "489",
         "exampleBoolean": true
       },
       {
