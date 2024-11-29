@@ -496,6 +496,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/TobaccoUseStatus-1"
+        },
+        "name": "Tobacco Use Status",
+        "description": "The Tobacco Use Status value set includes values that may be used to represent an individual's current tobacco use and exposure status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/YesNo"
         },
         "name": "Yes/No",

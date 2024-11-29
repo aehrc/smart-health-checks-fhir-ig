@@ -129,42 +129,7 @@
               "text": "Smoking status",
               "type": "choice",
               "repeats": false,
-              "answerOption": [
-                {
-                  "valueCoding": {
-                    "code": "266919005",
-                    "system": "http://snomed.info/sct",
-                    "display": "Lifetime non-smoker"
-                  }
-                },
-                {
-                  "valueCoding": {
-                    "code": "77176002",
-                    "system": "http://snomed.info/sct",
-                    "display": "Current smoker"
-                  }
-                },
-                {
-                  "valueCoding": {
-                    "code": "8517006",
-                    "system": "http://snomed.info/sct",
-                    "display": "Ex-smoker"
-                  }
-                },
-                {
-                  "valueCoding": {
-                    "code": "16090371000119103",
-                    "system": "http://snomed.info/sct",
-                    "display": "Exposure to second hand tobacco smoke"
-                  }
-                },
-                {
-                  "valueString": "Wants to quit"
-                },
-                {
-                  "valueString": "Other tobacco use"
-                }
-              ]
+              "answerValueSet": "#TobaccoUseStatus-1"
             },
             {
               "extension": [
@@ -221,7 +186,10 @@
                 {
                   "question": "b639a3a8-f476-4cc8-b5c7-f5d2abb23511",
                   "operator": "=",
-                  "answerString": "Wants to quit"
+                  "answerCoding": {
+                    "code": "394872000",
+                    "system": "http://snomed.info/sct"
+                  }
                 }
               ],
               "enableBehavior": "any"
@@ -250,7 +218,10 @@
                 {
                   "question": "b639a3a8-f476-4cc8-b5c7-f5d2abb23511",
                   "operator": "=",
-                  "answerString": "Wants to quit"
+                  "answerCoding": {
+                    "code": "394872000",
+                    "system": "http://snomed.info/sct"
+                  }
                 }
               ],
               "enableBehavior": "any"

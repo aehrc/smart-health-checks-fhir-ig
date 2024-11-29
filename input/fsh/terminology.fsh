@@ -805,6 +805,12 @@ Description: "The SNOMED CT Supplement for Aboriginal and Torres Strait Islander
 * #171155001 "Up to date"
 * #48031000119106 "Quit >12 months"
 * #735128000 "Quit <12 months"
+* #266919005 "Never smoked"
+* #77176002 "Current smoker"
+* #8517006 "Ex-smoker"
+* #16090371000119103 "Exposure to second hand tobacco smoke"
+* #394872000 "Wants to quit"
+* #713914004 "Other tobacco use"
 
 
 ValueSet: CervicalScreeningStatus
@@ -860,3 +866,43 @@ Description: "The Smoking Quit Status value set includes values that can indicat
 * ^expansion.contains[=].display = "Quit <12 months"
 * $SCT#48031000119106 "Quit >12 months"
 * $SCT#735128000 "Quit <12 months"
+
+
+ValueSet: TobaccoUseStatus
+Id: TobaccoUseStatus-1
+Title: "Tobacco Use Status"
+Description: "The Tobacco Use Status value set includes values that may be used to represent an individual's current tobacco use and exposure status."
+* ^experimental = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/valueset-supplement"
+* ^extension[=].valueCanonical = "https://smartforms.csiro.au/ig/CodeSystem/HealthChecksSCTSupplement"
+* ^expansion.identifier = "urn:uuid:577a997d-bacd-499f-bae4-aa6efdcca45e"
+* ^expansion.timestamp = "2024-11-29T10:37:34+10:00"
+* ^expansion.parameter[0].name = "version"
+* ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20241130"
+* ^expansion.parameter[+].name = "used-codesystem"
+* ^expansion.parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20241130"
+* ^expansion.contains[0].system = "http://snomed.info/sct"
+* ^expansion.contains[=].code = #266919005
+* ^expansion.contains[=].display = "Never smoked"
+* ^expansion.contains[+].system = "http://snomed.info/sct"
+* ^expansion.contains[=].code = #77176002
+* ^expansion.contains[=].display = "Current smoker"
+* ^expansion.contains[+].system = "http://snomed.info/sct"
+* ^expansion.contains[=].code = #8517006
+* ^expansion.contains[=].display = "Ex-smoker"
+* ^expansion.contains[+].system = "http://snomed.info/sct"
+* ^expansion.contains[=].code = #16090371000119103
+* ^expansion.contains[=].display = "Exposure to second hand tobacco smoke"
+* ^expansion.contains[+].system = "http://snomed.info/sct"
+* ^expansion.contains[=].code = #394872000
+* ^expansion.contains[=].display = "Wants to quit"
+* ^expansion.contains[+].system = "http://snomed.info/sct"
+* ^expansion.contains[=].code = #713914004
+* ^expansion.contains[=].display = "Other tobacco use"
+* $SCT#266919005 "Never smoked"
+* $SCT#77176002 "Current smoker"
+* $SCT#8517006 "Ex-smoker"
+* $SCT#16090371000119103 "Exposure to second hand tobacco smoke"
+* $SCT#394872000 "Wants to quit"
+* $SCT#713914004 "Other tobacco use"
+

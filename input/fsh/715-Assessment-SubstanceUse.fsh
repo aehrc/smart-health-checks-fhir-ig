@@ -125,13 +125,7 @@ Description: "Substance Use sub-questionnaire for Aboriginal and Torres Strait I
       * text = "Smoking status"
       * type = #choice
       * repeats = false
-      // better as a standard answerValueSet when missing concepts are available or national standard adoption
-      * answerOption[+].valueCoding = http://snomed.info/sct#266919005 "Lifetime non-smoker"
-      * answerOption[+].valueCoding = http://snomed.info/sct#77176002 "Current smoker"
-      * answerOption[+].valueCoding = http://snomed.info/sct#8517006 "Ex-smoker"
-      * answerOption[+].valueCoding = http://snomed.info/sct#16090371000119103 "Exposure to second hand tobacco smoke"
-      * answerOption[+].valueString = "Wants to quit"
-      * answerOption[+].valueString = "Other tobacco use"
+      * answerValueSet = "#TobaccoUseStatus-1"
     * item[+]
       * extension[questionnaire-itemControl].valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#radio-button
       * linkId = "96dc7c22-d003-459c-8a56-f6cd182fc077"
@@ -142,8 +136,7 @@ Description: "Substance Use sub-questionnaire for Aboriginal and Torres Strait I
         * question = "b639a3a8-f476-4cc8-b5c7-f5d2abb23511"
         * operator = #=
         * answerCoding = http://snomed.info/sct#8517006
-      * answerValueSet = "#SmokingQuitStatus-1"
-      
+      * answerValueSet = "#SmokingQuitStatus-1"      
     * item[+]
       * linkId = "9e86387d-1be4-4c26-9047-9dd6b03e1ee0"
       * text = "How many?"
@@ -160,7 +153,7 @@ Description: "Substance Use sub-questionnaire for Aboriginal and Torres Strait I
       * enableWhen[+]
         * question = "b639a3a8-f476-4cc8-b5c7-f5d2abb23511"
         * operator = #=
-        * answerString = "Wants to quit"
+        * answerCoding = http://snomed.info/sct#394872000
       * enableBehavior = #any
     * item[+]
       * linkId = "32e71641-f660-4ca2-af99-dff8917f07be"
@@ -177,7 +170,7 @@ Description: "Substance Use sub-questionnaire for Aboriginal and Torres Strait I
       * enableWhen[+]
         * question = "b639a3a8-f476-4cc8-b5c7-f5d2abb23511"
         * operator = #=
-        * answerString = "Wants to quit"
+        * answerCoding = http://snomed.info/sct#394872000
       * enableBehavior = #any
   * item[+]
     * linkId = "34feaee8-8088-43ee-991d-9729990b5550"

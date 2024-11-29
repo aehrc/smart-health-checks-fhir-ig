@@ -27,6 +27,30 @@
     {
       "code": "735128000",
       "display": "Quit <12 months"
+    },
+    {
+      "code": "266919005",
+      "display": "Never smoked"
+    },
+    {
+      "code": "77176002",
+      "display": "Current smoker"
+    },
+    {
+      "code": "8517006",
+      "display": "Ex-smoker"
+    },
+    {
+      "code": "16090371000119103",
+      "display": "Exposure to second hand tobacco smoke"
+    },
+    {
+      "code": "394872000",
+      "display": "Wants to quit"
+    },
+    {
+      "code": "713914004",
+      "display": "Other tobacco use"
     }
   ],
   "experimental": false,
