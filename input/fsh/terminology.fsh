@@ -844,6 +844,6 @@ Title: "Smoking Quit Status"
 Description: "The Smoking Quit Status value set includes values that can indicate how long ago an individual quit smoking."
 * ^experimental = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/valueset-supplement"
-* ^extension[=].valueCanonical = "https://smartforms.csiro.au/ig/CodeSystem/HealthChecksSCTSupplement"
+* ^extension[=].valueCanonical = "https://smartforms.csiro.au/ig/CodeSystem/HealthChecksSCTSupplement|0.2.0"
 * $SCT#48031000119106 "Quit >12 months"
 * $SCT#735128000 "Quit <12 months"

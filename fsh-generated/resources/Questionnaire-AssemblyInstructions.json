@@ -1799,7 +1799,7 @@
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/valueset-supplement",
-          "valueCanonical": "https://smartforms.csiro.au/ig/CodeSystem/HealthChecksSCTSupplement"
+          "valueCanonical": "https://smartforms.csiro.au/ig/CodeSystem/HealthChecksSCTSupplement|0.2.0"
         }
       ],
       "compose": {
