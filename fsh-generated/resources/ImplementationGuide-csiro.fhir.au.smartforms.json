@@ -418,6 +418,13 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/QR-1"
+        },
+        "name": "QR-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/QuestionnaireItemControlExtended"
         },
         "name": "Questionnaire Item Control Extension",
