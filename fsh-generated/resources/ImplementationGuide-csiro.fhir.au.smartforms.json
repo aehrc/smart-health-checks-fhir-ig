@@ -50,6 +50,13 @@
     "resource": [
       {
         "reference": {
+          "reference": "QuestionnaireResponse/546"
+        },
+        "name": "546",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/AssemblyInstructions"
         },
         "name": "Aboriginal and Torres Strait Islander Health Check",
