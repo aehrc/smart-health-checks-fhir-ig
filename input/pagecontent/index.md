@@ -1,5 +1,5 @@
 ### Introduction
-This implementation guide is provided to support the use of Smart Forms.
+This implementation guide is provided to support the use of Smart Forms. 
 
 Smart Forms is a FHIR-based solution aimed to demonstrate effective undertaking of health care assessments. It leverages [SMART App Launch](https://build.fhir.org/ig/HL7/smart-app-launch/app-launch.html) and the [Structured Data Capture specification](http://build.fhir.org/ig/HL7/sdc/index.html) to support better clinical outcomes, improved clinical workflow, enhance the usefulness of information in the practice record and improve interoperability of health information. 
 
